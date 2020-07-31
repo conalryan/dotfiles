@@ -1,0 +1,935 @@
+!SESSION 2020-03-10 20:08:46.634 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_232
+java.vendor=AdoptOpenJDK
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Command-line arguments:  -data /Users/cryan/.config/coc/extensions/coc-java-data/jdt_ws_803b803e63034806b04f1422f9cbcc37
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-10 20:08:48.917
+!MESSAGE class org.eclipse.jdt.ls.core.internal.JavaLanguageServerPlugin is started
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-10 20:08:49.053
+!MESSAGE Main thread is waiting
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-10 20:08:49.076
+!MESSAGE >> initialize
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-10 20:08:49.077
+!MESSAGE Initializing Java Language Server 0.50.0.202001101844
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-10 20:08:49.092
+!MESSAGE Static Commands: []
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-10 20:08:49.092
+!MESSAGE Non-Static Commands: [java.edit.organizeImports, java.project.updateSourceAttachment, java.project.removeFromSourcePath, java.project.listSourcePaths, java.project.resolveSourceAttachment, java.project.addToSourcePath]
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-10 20:08:49.105
+!MESSAGE >> initialized
+
+!ENTRY org.eclipse.core.net 1 0 2020-03-10 20:08:49.122
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-10 20:08:49.140
+!MESSAGE Creating the Java project jdt.ls-java-project
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-10 20:08:49.946
+!MESSAGE Finished creating the Java project jdt.ls-java-project
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-10 20:08:50.455
+!MESSAGE Try to create an invisible project for the workspace /Users/cryan/dev/code/p/bazel
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-10 20:08:50.456
+!MESSAGE Creating the Java project bazel_7f852069
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-10 20:08:50.470
+!MESSAGE Finished creating the Java project bazel_7f852069
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-10 20:08:50.621
+!MESSAGE Successfully created a workspace invisible project bazel_7f852069
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-10 20:08:50.623
+!MESSAGE Workspace initialized in 1527ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-10 20:08:50.733
+!MESSAGE >> initialization job finished
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-10 20:08:50.739
+!MESSAGE >> workspace/didChangeConfiguration
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-10 20:08:50.748
+!MESSAGE >> New configuration: {java={jdt={ls={vmargs=-noverify -Xmx1G -XX:+UseG1GC -XX:+UseStringDeduplication}}, errors={incompleteClasspath={severity=warning}}, configuration={checkProjectSettingsExclusions=true, updateBuildConfiguration=interactive}, trace={server=off}, import={gradle={enabled=true, wrapper={enabled=true}}, maven={enabled=true}, exclusions=[**/node_modules/**, **/.metadata/**, **/archetype-resources/**, **/META-INF/maven/**]}, referencesCodeLens={enabled=false}, signatureHelp={enabled=false}, implementationsCodeLens={enabled=false}, format={enabled=true, comments={enabled=true}, onType={enabled=true, fixComment={enabled=true}}}, autobuild={enabled=true}, maxConcurrentBuilds=1.0, completion={enabled=true, overwrite=true, guessMethodArguments=false, favoriteStaticMembers=[org.junit.Assert.*, org.junit.Assume.*, org.junit.jupiter.api.Assertions.*, org.junit.jupiter.api.Assumptions.*, org.junit.jupiter.api.DynamicContainer.*, org.junit.jupiter.api.DynamicTest.*, org.mockito.Mockito.*, org.mockito.ArgumentMatchers.*, org.mockito.Answers.*], importOrder=[java, javax, com, org]}, progressReports={enabled=true}, foldingRange={enabled=true}, maven={downloadSources=false}, codeGeneration={hashCodeEquals={useJava7Objects=false, useInstanceof=false}, useBlocks=false, generateComments=false, toString={template=${object.className} [${member.name()}=${member.value}, ${otherMembers}], codeStyle=STRING_CONCATENATION, skipNullValues=false, listArrayContents=true, limitElements=0.0}}}}
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-10 20:08:50.749
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-10 20:08:50.759
+!MESSAGE >> Updating classpath for project bazel_7f852069
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-10 20:08:51.053
+!MESSAGE Reconciled 0. Took 83 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-10 20:08:51.180
+!MESSAGE begin problem for /App.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-10 20:08:51.180
+!MESSAGE 3 problems reported for /App.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-10 20:08:51.183
+!MESSAGE Validated 1. Took 125 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-10 20:08:51.197
+!MESSAGE >> build jobs finished
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-10 20:08:51.202
+!MESSAGE >> registerFeature 'workspace/didChangeWatchedFiles'
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-10 20:08:51.203
+!MESSAGE >> registerFeature 'workspace/didChangeWatchedFiles'
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-10 20:08:51.205
+!MESSAGE >> watchers registered
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-10 20:09:51.542
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-10 20:09:51.649
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-10 20:09:51.653
+!MESSAGE TestApp.java isn't on the classpath. Only syntax errors will be reported for file:///Users/cryan/dev/code/p/bazel/bazelbuild-examples/java-maven/src/test/java/com/example/myproject/TestApp.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-10 20:09:52.079
+!MESSAGE Reconciled 0. Took 18 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-10 20:09:52.502
+!MESSAGE begin problem for /TestApp.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-10 20:09:52.503
+!MESSAGE 0 problems reported for /TestApp.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-10 20:09:52.503
+!MESSAGE Validated 1. Took 19 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-10 20:09:56.176
+!MESSAGE >> workspace/didChangeConfiguration
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-10 20:09:56.185
+!MESSAGE >> New configuration: {java={jdt={ls={vmargs=-noverify -Xmx1G -XX:+UseG1GC -XX:+UseStringDeduplication}}, errors={incompleteClasspath={severity=ignore}}, configuration={checkProjectSettingsExclusions=true, updateBuildConfiguration=interactive}, trace={server=off}, import={gradle={enabled=true, wrapper={enabled=true}}, maven={enabled=true}, exclusions=[**/node_modules/**, **/.metadata/**, **/archetype-resources/**, **/META-INF/maven/**]}, referencesCodeLens={enabled=false}, signatureHelp={enabled=false}, implementationsCodeLens={enabled=false}, format={enabled=true, comments={enabled=true}, onType={enabled=true, fixComment={enabled=true}}}, autobuild={enabled=true}, maxConcurrentBuilds=1.0, completion={enabled=true, overwrite=true, guessMethodArguments=false, favoriteStaticMembers=[org.junit.Assert.*, org.junit.Assume.*, org.junit.jupiter.api.Assertions.*, org.junit.jupiter.api.Assumptions.*, org.junit.jupiter.api.DynamicContainer.*, org.junit.jupiter.api.DynamicTest.*, org.mockito.Mockito.*, org.mockito.ArgumentMatchers.*, org.mockito.Answers.*], importOrder=[java, javax, com, org]}, progressReports={enabled=true}, foldingRange={enabled=true}, maven={downloadSources=false}, codeGeneration={hashCodeEquals={useJava7Objects=false, useInstanceof=false}, useBlocks=false, generateComments=false, toString={template=${object.className} [${member.name()}=${member.value}, ${otherMembers}], codeStyle=STRING_CONCATENATION, skipNullValues=false, listArrayContents=true, limitElements=0.0}}}}
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-10 20:10:47.394
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-10 20:10:47.396
+!MESSAGE Clearing problems for /TestApp.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-10 20:36:46.523
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-10 20:36:46.525
+!MESSAGE ProjectRunner.java isn't on the classpath. Only syntax errors will be reported for file:///Users/cryan/dev/code/p/bazel/bazelbuild-examples/java-tutorial/src/main/java/com/example/ProjectRunner.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-10 20:36:47.058
+!MESSAGE Reconciled 0. Took 73 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-10 20:36:47.506
+!MESSAGE begin problem for /ProjectRunner.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-10 20:36:47.506
+!MESSAGE 0 problems reported for /ProjectRunner.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-10 20:36:47.507
+!MESSAGE Validated 1. Took 42 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-10 20:37:20.106
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-10 20:37:20.108
+!MESSAGE Clearing problems for /ProjectRunner.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-10 20:37:20.224
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-10 20:37:20.225
+!MESSAGE Greeting.java isn't on the classpath. Only syntax errors will be reported for file:///Users/cryan/dev/code/p/bazel/bazelbuild-examples/java-tutorial/src/main/java/com/example/Greeting.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-10 20:37:20.644
+!MESSAGE Reconciled 0. Took 10 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-10 20:37:21.061
+!MESSAGE begin problem for /Greeting.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-10 20:37:21.062
+!MESSAGE 0 problems reported for /Greeting.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-10 20:37:21.062
+!MESSAGE Validated 1. Took 12 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-10 20:37:37.353
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-10 20:37:37.354
+!MESSAGE Clearing problems for /Greeting.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-10 20:37:37.469
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-10 20:37:37.470
+!MESSAGE Runner.java isn't on the classpath. Only syntax errors will be reported for file:///Users/cryan/dev/code/p/bazel/bazelbuild-examples/java-tutorial/src/main/java/com/example/cmdline/Runner.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-10 20:37:37.887
+!MESSAGE Reconciled 0. Took 7 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-10 20:37:38.301
+!MESSAGE begin problem for /Runner.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-10 20:37:38.302
+!MESSAGE 0 problems reported for /Runner.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-10 20:37:38.302
+!MESSAGE Validated 1. Took 11 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-10 20:38:19.803
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-10 20:38:19.806
+!MESSAGE Clearing problems for /Runner.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-10 20:50:10.582
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-10 20:50:10.584
+!MESSAGE ProjectRunner.java isn't on the classpath. Only syntax errors will be reported for file:///Users/cryan/dev/code/p/bazel/bazelbuild-examples/java-tutorial/src/main/java/com/example/ProjectRunner.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-10 20:50:11.042
+!MESSAGE Reconciled 0. Took 3 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-10 20:50:11.453
+!MESSAGE begin problem for /ProjectRunner.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-10 20:50:11.454
+!MESSAGE 0 problems reported for /ProjectRunner.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-10 20:50:11.454
+!MESSAGE Validated 1. Took 11 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-10 20:50:18.072
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-10 20:50:18.073
+!MESSAGE Clearing problems for /ProjectRunner.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-10 20:50:18.177
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-10 20:50:18.178
+!MESSAGE Greeting.java isn't on the classpath. Only syntax errors will be reported for file:///Users/cryan/dev/code/p/bazel/bazelbuild-examples/java-tutorial/src/main/java/com/example/Greeting.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-10 20:50:18.588
+!MESSAGE Reconciled 0. Took 4 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-10 20:50:19.000
+!MESSAGE begin problem for /Greeting.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-10 20:50:19.000
+!MESSAGE 0 problems reported for /Greeting.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-10 20:50:19.001
+!MESSAGE Validated 1. Took 10 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-10 20:50:27.701
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-10 20:50:27.702
+!MESSAGE Clearing problems for /Greeting.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-10 20:50:27.796
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-10 20:50:27.798
+!MESSAGE ProjectRunner.java isn't on the classpath. Only syntax errors will be reported for file:///Users/cryan/dev/code/p/bazel/bazelbuild-examples/java-tutorial/src/main/java/com/example/ProjectRunner.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-10 20:50:28.258
+!MESSAGE Reconciled 0. Took 8 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-10 20:50:28.672
+!MESSAGE begin problem for /ProjectRunner.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-10 20:50:28.672
+!MESSAGE 0 problems reported for /ProjectRunner.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-10 20:50:28.673
+!MESSAGE Validated 1. Took 11 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-10 20:59:30.335
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-10 20:59:30.337
+!MESSAGE Clearing problems for /ProjectRunner.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-10 21:39:08.573
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-10 21:39:08.575
+!MESSAGE Runner.java isn't on the classpath. Only syntax errors will be reported for file:///Users/cryan/dev/code/p/bazel/bazelbuild-examples/java-tutorial/src/main/java/com/example/cmdline/Runner.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-10 21:39:08.989
+!MESSAGE Reconciled 0. Took 7 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-10 21:39:09.401
+!MESSAGE begin problem for /Runner.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-10 21:39:09.402
+!MESSAGE 0 problems reported for /Runner.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-10 21:39:09.402
+!MESSAGE Validated 1. Took 11 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-10 21:39:16.606
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-10 21:39:16.607
+!MESSAGE Clearing problems for /Runner.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-10 21:43:03.015
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-10 21:43:03.017
+!MESSAGE Runner.java isn't on the classpath. Only syntax errors will be reported for file:///Users/cryan/dev/code/p/bazel/bazelbuild-examples/java-tutorial/src/main/java/com/example/cmdline/Runner.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-10 21:43:03.428
+!MESSAGE Reconciled 0. Took 6 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-10 21:43:03.839
+!MESSAGE begin problem for /Runner.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-10 21:43:03.839
+!MESSAGE 0 problems reported for /Runner.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-10 21:43:03.840
+!MESSAGE Validated 1. Took 11 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-10 21:43:21.905
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-10 21:43:21.907
+!MESSAGE Clearing problems for /Runner.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-10 21:45:45.548
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-10 21:45:45.549
+!MESSAGE Runner.java isn't on the classpath. Only syntax errors will be reported for file:///Users/cryan/dev/code/p/bazel/bazelbuild-examples/java-tutorial/src/main/java/com/example/cmdline/Runner.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-10 21:45:45.960
+!MESSAGE Reconciled 0. Took 6 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-10 21:45:46.375
+!MESSAGE begin problem for /Runner.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-10 21:45:46.375
+!MESSAGE 0 problems reported for /Runner.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-10 21:45:46.376
+!MESSAGE Validated 1. Took 10 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-10 21:45:47.294
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-10 21:45:47.295
+!MESSAGE Clearing problems for /Runner.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-10 21:46:32.958
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-10 21:46:32.959
+!MESSAGE Greeting.java isn't on the classpath. Only syntax errors will be reported for file:///Users/cryan/dev/code/p/bazel/bazelbuild-examples/java-tutorial/src/main/java/com/example/Greeting.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-10 21:46:33.374
+!MESSAGE Reconciled 0. Took 7 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-10 21:46:33.789
+!MESSAGE begin problem for /Greeting.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-10 21:46:33.790
+!MESSAGE 0 problems reported for /Greeting.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-10 21:46:33.790
+!MESSAGE Validated 1. Took 11 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-10 21:46:36.609
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-10 21:46:36.610
+!MESSAGE Clearing problems for /Greeting.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-10 21:46:36.709
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-10 21:46:36.710
+!MESSAGE ProjectRunner.java isn't on the classpath. Only syntax errors will be reported for file:///Users/cryan/dev/code/p/bazel/bazelbuild-examples/java-tutorial/src/main/java/com/example/ProjectRunner.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-10 21:46:37.123
+!MESSAGE Reconciled 0. Took 4 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-10 21:46:37.537
+!MESSAGE begin problem for /ProjectRunner.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-10 21:46:37.538
+!MESSAGE 0 problems reported for /ProjectRunner.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-10 21:46:37.538
+!MESSAGE Validated 1. Took 9 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-10 21:46:41.395
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-10 21:46:41.396
+!MESSAGE Clearing problems for /ProjectRunner.java
+!SESSION 2020-03-11 10:21:06.424 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_232
+java.vendor=AdoptOpenJDK
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Command-line arguments:  -data /Users/cryan/.config/coc/extensions/coc-java-data/jdt_ws_803b803e63034806b04f1422f9cbcc37
+
+!ENTRY org.eclipse.core.resources 2 10035 2020-03-11 10:21:07.679
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-11 10:21:08.940
+!MESSAGE class org.eclipse.jdt.ls.core.internal.JavaLanguageServerPlugin is started
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-11 10:21:09.055
+!MESSAGE Main thread is waiting
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-11 10:21:09.078
+!MESSAGE >> initialize
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-11 10:21:09.079
+!MESSAGE Initializing Java Language Server 0.50.0.202001101844
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-11 10:21:09.092
+!MESSAGE Static Commands: []
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-11 10:21:09.093
+!MESSAGE Non-Static Commands: [java.edit.organizeImports, java.project.updateSourceAttachment, java.project.removeFromSourcePath, java.project.listSourcePaths, java.project.resolveSourceAttachment, java.project.addToSourcePath]
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-11 10:21:09.106
+!MESSAGE >> initialized
+
+!ENTRY org.eclipse.core.net 1 0 2020-03-11 10:21:09.121
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-11 10:21:09.901
+!MESSAGE Workspace initialized in 804ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-11 10:21:09.931
+!MESSAGE >> initialization job finished
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-11 10:21:09.938
+!MESSAGE >> workspace/didChangeConfiguration
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-11 10:21:09.951
+!MESSAGE >> New configuration: {java={jdt={ls={vmargs=-noverify -Xmx1G -XX:+UseG1GC -XX:+UseStringDeduplication}}, errors={incompleteClasspath={severity=warning}}, configuration={checkProjectSettingsExclusions=true, updateBuildConfiguration=interactive}, trace={server=off}, import={gradle={enabled=true, wrapper={enabled=true}}, maven={enabled=true}, exclusions=[**/node_modules/**, **/.metadata/**, **/archetype-resources/**, **/META-INF/maven/**]}, referencesCodeLens={enabled=false}, signatureHelp={enabled=false}, implementationsCodeLens={enabled=false}, format={enabled=true, comments={enabled=true}, onType={enabled=true, fixComment={enabled=true}}}, autobuild={enabled=true}, maxConcurrentBuilds=1.0, completion={enabled=true, overwrite=true, guessMethodArguments=false, favoriteStaticMembers=[org.junit.Assert.*, org.junit.Assume.*, org.junit.jupiter.api.Assertions.*, org.junit.jupiter.api.Assumptions.*, org.junit.jupiter.api.DynamicContainer.*, org.junit.jupiter.api.DynamicTest.*, org.mockito.Mockito.*, org.mockito.ArgumentMatchers.*, org.mockito.Answers.*], importOrder=[java, javax, com, org]}, progressReports={enabled=true}, foldingRange={enabled=true}, maven={downloadSources=false}, codeGeneration={hashCodeEquals={useJava7Objects=false, useInstanceof=false}, useBlocks=false, generateComments=false, toString={template=${object.className} [${member.name()}=${member.value}, ${otherMembers}], codeStyle=STRING_CONCATENATION, skipNullValues=false, listArrayContents=true, limitElements=0.0}}}}
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-11 10:21:09.952
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-11 10:21:10.127
+!MESSAGE MyAppServlet.java isn't on the classpath. Only syntax errors will be reported for file:///Users/cryan/dev/code/p/bazel/bazelbuild-examples/tutorial/backend/src/main/java/com/google/bazel/example/app/MyAppServlet.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-11 10:21:10.227
+!MESSAGE Reconciled 0. Took 54 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-11 10:21:10.294
+!MESSAGE begin problem for /MyAppServlet.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-11 10:21:10.295
+!MESSAGE 0 problems reported for /MyAppServlet.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-11 10:21:10.298
+!MESSAGE Validated 1. Took 58 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-11 10:21:10.306
+!MESSAGE >> Updating classpath for project bazel_7f852069
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-11 10:21:10.381
+!MESSAGE >> build jobs finished
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-11 10:21:10.393
+!MESSAGE >> registerFeature 'workspace/didChangeWatchedFiles'
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-11 10:21:10.394
+!MESSAGE >> registerFeature 'workspace/didChangeWatchedFiles'
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-11 10:21:10.396
+!MESSAGE >> watchers registered
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-11 10:21:23.309
+!MESSAGE >> workspace/didChangeConfiguration
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-11 10:21:23.322
+!MESSAGE >> New configuration: {java={jdt={ls={vmargs=-noverify -Xmx1G -XX:+UseG1GC -XX:+UseStringDeduplication}}, errors={incompleteClasspath={severity=ignore}}, configuration={checkProjectSettingsExclusions=true, updateBuildConfiguration=interactive}, trace={server=off}, import={gradle={enabled=true, wrapper={enabled=true}}, maven={enabled=true}, exclusions=[**/node_modules/**, **/.metadata/**, **/archetype-resources/**, **/META-INF/maven/**]}, referencesCodeLens={enabled=false}, signatureHelp={enabled=false}, implementationsCodeLens={enabled=false}, format={enabled=true, comments={enabled=true}, onType={enabled=true, fixComment={enabled=true}}}, autobuild={enabled=true}, maxConcurrentBuilds=1.0, completion={enabled=true, overwrite=true, guessMethodArguments=false, favoriteStaticMembers=[org.junit.Assert.*, org.junit.Assume.*, org.junit.jupiter.api.Assertions.*, org.junit.jupiter.api.Assumptions.*, org.junit.jupiter.api.DynamicContainer.*, org.junit.jupiter.api.DynamicTest.*, org.mockito.Mockito.*, org.mockito.ArgumentMatchers.*, org.mockito.Answers.*], importOrder=[java, javax, com, org]}, progressReports={enabled=true}, foldingRange={enabled=true}, maven={downloadSources=false}, codeGeneration={hashCodeEquals={useJava7Objects=false, useInstanceof=false}, useBlocks=false, generateComments=false, toString={template=${object.className} [${member.name()}=${member.value}, ${otherMembers}], codeStyle=STRING_CONCATENATION, skipNullValues=false, listArrayContents=true, limitElements=0.0}}}}
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-11 10:21:58.031
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-11 10:21:58.033
+!MESSAGE Clearing problems for /MyAppServlet.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-11 10:30:15.952
+!MESSAGE >> java/didChangeWorkspaceFolders
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-11 10:30:15.954
+!MESSAGE >> java/didChangeWorkspaceFolders
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-11 10:30:16.207
+!MESSAGE Updated workspace folders in 253 ms: Added 1 folder(s), removed0 folders.
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-11 10:30:16.216
+!MESSAGE Projects:
+bazel_7f852069: /Users/cryan/.config/coc/extensions/coc-java-data/jdt_ws_803b803e63034806b04f1422f9cbcc37/bazel_7f852069
+  resolved classpath:
+  org.eclipse.jdt.launching.JRE_CONTAINER
+    /Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/lib/resources.jar
+    /Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/lib/rt.jar
+    /Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/lib/jsse.jar
+    /Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/lib/jce.jar
+    /Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/lib/charsets.jar
+    /Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/lib/ext/sunec.jar
+    /Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/lib/ext/nashorn.jar
+    /Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/lib/ext/cldrdata.jar
+    /Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/lib/ext/dnsns.jar
+    /Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/lib/ext/localedata.jar
+    /Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/lib/ext/sunjce_provider.jar
+    /Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/lib/ext/sunpkcs11.jar
+    /Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/lib/ext/jaccess.jar
+    /Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/lib/ext/zipfs.jar
+    /System/Library/Java/Extensions/MRJToolkit.jar
+  /bazel_7f852069/_/bazelbuild-examples/java-maven/src/main/java
+jdt.ls-java-project: /Users/cryan/.config/coc/extensions/coc-java-data/jdt_ws_803b803e63034806b04f1422f9cbcc37/jdt.ls-java-project
+  resolved classpath:
+  /jdt.ls-java-project/src
+  org.eclipse.jdt.launching.JRE_CONTAINER
+    /Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/lib/resources.jar
+    /Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/lib/rt.jar
+    /Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/lib/jsse.jar
+    /Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/lib/jce.jar
+    /Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/lib/charsets.jar
+    /Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/lib/ext/sunec.jar
+    /Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/lib/ext/nashorn.jar
+    /Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/lib/ext/cldrdata.jar
+    /Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/lib/ext/dnsns.jar
+    /Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/lib/ext/localedata.jar
+    /Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/lib/ext/sunjce_provider.jar
+    /Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/lib/ext/sunpkcs11.jar
+    /Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/lib/ext/jaccess.jar
+    /Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/lib/ext/zipfs.jar
+    /System/Library/Java/Extensions/MRJToolkit.jar
+Java Runtimes:
+  default: /Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home  CDC 1.0, Foundation 1.0: /Library/Java/JavaVirtualMachines/adoptopenjdk-13.jdk/Contents/Home
+  Minimum environment to run the OSGi framework 1.0: /Library/Java/JavaVirtualMachines/adoptopenjdk-13.jdk/Contents/Home
+  CDC 1.1, Foundation 1.1: /Library/Java/JavaVirtualMachines/adoptopenjdk-13.jdk/Contents/Home
+  Java Runtime Environment 1.1: /Library/Java/JavaVirtualMachines/adoptopenjdk-13.jdk/Contents/Home
+  Minimum environment to run the OSGi framework 1.1: /Library/Java/JavaVirtualMachines/adoptopenjdk-13.jdk/Contents/Home
+  Java 2 Platform, Standard Edition 1.2: /Library/Java/JavaVirtualMachines/adoptopenjdk-13.jdk/Contents/Home
+  Minimum environment to run the OSGi framework 1.2: /Library/Java/JavaVirtualMachines/adoptopenjdk-13.jdk/Contents/Home
+  Java 2 Platform, Standard Edition 1.3: /Library/Java/JavaVirtualMachines/adoptopenjdk-13.jdk/Contents/Home
+  Java 2 Platform, Standard Edition 1.4: /Library/Java/JavaVirtualMachines/adoptopenjdk-13.jdk/Contents/Home
+  Java 2 Platform, Standard Edition 5.0: /Library/Java/JavaVirtualMachines/adoptopenjdk-13.jdk/Contents/Home
+  Java Platform, Standard Edition 6.0: /Library/Java/JavaVirtualMachines/adoptopenjdk-13.jdk/Contents/Home
+  Java Platform, Standard Edition 7.0: /Library/Java/JavaVirtualMachines/adoptopenjdk-13.jdk/Contents/Home
+  Java Platform, Standard Edition 8.0: /Library/Java/JavaVirtualMachines/adoptopenjdk-13.jdk/Contents/Home
+  Java Platform, Standard Edition 9: /Library/Java/JavaVirtualMachines/adoptopenjdk-13.jdk/Contents/Home
+  Java Platform, Standard Edition 10: /Library/Java/JavaVirtualMachines/adoptopenjdk-13.jdk/Contents/Home
+  Java Platform, Standard Edition 11: /Library/Java/JavaVirtualMachines/adoptopenjdk-13.jdk/Contents/Home
+  Java Platform, Standard Edition 12: /Library/Java/JavaVirtualMachines/adoptopenjdk-13.jdk/Contents/Home
+  Java Platform, Standard Edition 13: /Library/Java/JavaVirtualMachines/adoptopenjdk-13.jdk/Contents/Home
+
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-11 10:30:16.451
+!MESSAGE Updated workspace folders in 233 ms: Added 1 folder(s), removed0 folders.
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-11 10:30:16.453
+!MESSAGE Projects:
+bazel_7f852069: /Users/cryan/.config/coc/extensions/coc-java-data/jdt_ws_803b803e63034806b04f1422f9cbcc37/bazel_7f852069
+  resolved classpath:
+  org.eclipse.jdt.launching.JRE_CONTAINER
+    /Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/lib/resources.jar
+    /Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/lib/rt.jar
+    /Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/lib/jsse.jar
+    /Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/lib/jce.jar
+    /Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/lib/charsets.jar
+    /Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/lib/ext/sunec.jar
+    /Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/lib/ext/nashorn.jar
+    /Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/lib/ext/cldrdata.jar
+    /Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/lib/ext/dnsns.jar
+    /Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/lib/ext/localedata.jar
+    /Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/lib/ext/sunjce_provider.jar
+    /Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/lib/ext/sunpkcs11.jar
+    /Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/lib/ext/jaccess.jar
+    /Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/lib/ext/zipfs.jar
+    /System/Library/Java/Extensions/MRJToolkit.jar
+  /bazel_7f852069/_/bazelbuild-examples/java-maven/src/main/java
+jdt.ls-java-project: /Users/cryan/.config/coc/extensions/coc-java-data/jdt_ws_803b803e63034806b04f1422f9cbcc37/jdt.ls-java-project
+  resolved classpath:
+  /jdt.ls-java-project/src
+  org.eclipse.jdt.launching.JRE_CONTAINER
+    /Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/lib/resources.jar
+    /Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/lib/rt.jar
+    /Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/lib/jsse.jar
+    /Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/lib/jce.jar
+    /Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/lib/charsets.jar
+    /Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/lib/ext/sunec.jar
+    /Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/lib/ext/nashorn.jar
+    /Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/lib/ext/cldrdata.jar
+    /Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/lib/ext/dnsns.jar
+    /Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/lib/ext/localedata.jar
+    /Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/lib/ext/sunjce_provider.jar
+    /Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/lib/ext/sunpkcs11.jar
+    /Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/lib/ext/jaccess.jar
+    /Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/lib/ext/zipfs.jar
+    /System/Library/Java/Extensions/MRJToolkit.jar
+Java Runtimes:
+  default: /Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home  CDC 1.0, Foundation 1.0: /Library/Java/JavaVirtualMachines/adoptopenjdk-13.jdk/Contents/Home
+  Minimum environment to run the OSGi framework 1.0: /Library/Java/JavaVirtualMachines/adoptopenjdk-13.jdk/Contents/Home
+  CDC 1.1, Foundation 1.1: /Library/Java/JavaVirtualMachines/adoptopenjdk-13.jdk/Contents/Home
+  Java Runtime Environment 1.1: /Library/Java/JavaVirtualMachines/adoptopenjdk-13.jdk/Contents/Home
+  Minimum environment to run the OSGi framework 1.1: /Library/Java/JavaVirtualMachines/adoptopenjdk-13.jdk/Contents/Home
+  Java 2 Platform, Standard Edition 1.2: /Library/Java/JavaVirtualMachines/adoptopenjdk-13.jdk/Contents/Home
+  Minimum environment to run the OSGi framework 1.2: /Library/Java/JavaVirtualMachines/adoptopenjdk-13.jdk/Contents/Home
+  Java 2 Platform, Standard Edition 1.3: /Library/Java/JavaVirtualMachines/adoptopenjdk-13.jdk/Contents/Home
+  Java 2 Platform, Standard Edition 1.4: /Library/Java/JavaVirtualMachines/adoptopenjdk-13.jdk/Contents/Home
+  Java 2 Platform, Standard Edition 5.0: /Library/Java/JavaVirtualMachines/adoptopenjdk-13.jdk/Contents/Home
+  Java Platform, Standard Edition 6.0: /Library/Java/JavaVirtualMachines/adoptopenjdk-13.jdk/Contents/Home
+  Java Platform, Standard Edition 7.0: /Library/Java/JavaVirtualMachines/adoptopenjdk-13.jdk/Contents/Home
+  Java Platform, Standard Edition 8.0: /Library/Java/JavaVirtualMachines/adoptopenjdk-13.jdk/Contents/Home
+  Java Platform, Standard Edition 9: /Library/Java/JavaVirtualMachines/adoptopenjdk-13.jdk/Contents/Home
+  Java Platform, Standard Edition 10: /Library/Java/JavaVirtualMachines/adoptopenjdk-13.jdk/Contents/Home
+  Java Platform, Standard Edition 11: /Library/Java/JavaVirtualMachines/adoptopenjdk-13.jdk/Contents/Home
+  Java Platform, Standard Edition 12: /Library/Java/JavaVirtualMachines/adoptopenjdk-13.jdk/Contents/Home
+  Java Platform, Standard Edition 13: /Library/Java/JavaVirtualMachines/adoptopenjdk-13.jdk/Contents/Home
+
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-11 10:30:16.468
+!MESSAGE >> registerFeature 'workspace/didChangeWatchedFiles'
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-11 10:30:16.480
+!MESSAGE >> registerFeature 'workspace/didChangeWatchedFiles'
+!SESSION 2020-03-11 10:50:36.581 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_232
+java.vendor=AdoptOpenJDK
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Command-line arguments:  -data /Users/cryan/.config/coc/extensions/coc-java-data/jdt_ws_803b803e63034806b04f1422f9cbcc37
+
+!ENTRY org.eclipse.core.resources 2 10035 2020-03-11 10:50:37.156
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-11 10:50:38.307
+!MESSAGE class org.eclipse.jdt.ls.core.internal.JavaLanguageServerPlugin is started
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-11 10:50:38.407
+!MESSAGE Main thread is waiting
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-11 10:50:38.428
+!MESSAGE >> initialize
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-11 10:50:38.428
+!MESSAGE Initializing Java Language Server 0.50.0.202001101844
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-11 10:50:38.440
+!MESSAGE Static Commands: []
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-11 10:50:38.441
+!MESSAGE Non-Static Commands: [java.edit.organizeImports, java.project.updateSourceAttachment, java.project.removeFromSourcePath, java.project.listSourcePaths, java.project.resolveSourceAttachment, java.project.addToSourcePath]
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-11 10:50:38.453
+!MESSAGE >> initialized
+
+!ENTRY org.eclipse.core.net 1 0 2020-03-11 10:50:38.464
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-11 10:50:39.275
+!MESSAGE Workspace initialized in 830ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-11 10:50:39.284
+!MESSAGE >> initialization job finished
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-11 10:50:39.291
+!MESSAGE >> workspace/didChangeConfiguration
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-11 10:50:39.305
+!MESSAGE >> New configuration: {java={jdt={ls={vmargs=-noverify -Xmx1G -XX:+UseG1GC -XX:+UseStringDeduplication}}, errors={incompleteClasspath={severity=warning}}, configuration={checkProjectSettingsExclusions=true, updateBuildConfiguration=interactive}, trace={server=off}, import={gradle={enabled=true, wrapper={enabled=true}}, maven={enabled=true}, exclusions=[**/node_modules/**, **/.metadata/**, **/archetype-resources/**, **/META-INF/maven/**]}, referencesCodeLens={enabled=false}, signatureHelp={enabled=false}, implementationsCodeLens={enabled=false}, format={enabled=true, comments={enabled=true}, onType={enabled=true, fixComment={enabled=true}}}, autobuild={enabled=true}, maxConcurrentBuilds=1.0, completion={enabled=true, overwrite=true, guessMethodArguments=false, favoriteStaticMembers=[org.junit.Assert.*, org.junit.Assume.*, org.junit.jupiter.api.Assertions.*, org.junit.jupiter.api.Assumptions.*, org.junit.jupiter.api.DynamicContainer.*, org.junit.jupiter.api.DynamicTest.*, org.mockito.Mockito.*, org.mockito.ArgumentMatchers.*, org.mockito.Answers.*], importOrder=[java, javax, com, org]}, progressReports={enabled=true}, foldingRange={enabled=true}, maven={downloadSources=false}, codeGeneration={hashCodeEquals={useJava7Objects=false, useInstanceof=false}, useBlocks=false, generateComments=false, toString={template=${object.className} [${member.name()}=${member.value}, ${otherMembers}], codeStyle=STRING_CONCATENATION, skipNullValues=false, listArrayContents=true, limitElements=0.0}}}}
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-11 10:50:39.306
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-11 10:50:39.470
+!MESSAGE ProjectRunner.java isn't on the classpath. Only syntax errors will be reported for file:///Users/cryan/dev/code/p/bazel/bazelbuild-examples/java-tutorial/src/main/java/com/example/ProjectRunner.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-11 10:50:39.505
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-11 10:50:39.508
+!MESSAGE Clearing problems for /ProjectRunner.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-11 10:50:39.536
+!MESSAGE >> Updating classpath for project bazel_7f852069
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-11 10:50:39.632
+!MESSAGE >> build jobs finished
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-11 10:50:39.646
+!MESSAGE >> registerFeature 'workspace/didChangeWatchedFiles'
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-11 10:50:39.647
+!MESSAGE >> registerFeature 'workspace/didChangeWatchedFiles'
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-11 10:50:39.649
+!MESSAGE >> watchers registered
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-11 10:50:44.822
+!MESSAGE >> workspace/didChangeConfiguration
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-11 10:50:44.831
+!MESSAGE >> New configuration: {java={jdt={ls={vmargs=-noverify -Xmx1G -XX:+UseG1GC -XX:+UseStringDeduplication}}, errors={incompleteClasspath={severity=ignore}}, configuration={checkProjectSettingsExclusions=true, updateBuildConfiguration=interactive}, trace={server=off}, import={gradle={enabled=true, wrapper={enabled=true}}, maven={enabled=true}, exclusions=[**/node_modules/**, **/.metadata/**, **/archetype-resources/**, **/META-INF/maven/**]}, referencesCodeLens={enabled=false}, signatureHelp={enabled=false}, implementationsCodeLens={enabled=false}, format={enabled=true, comments={enabled=true}, onType={enabled=true, fixComment={enabled=true}}}, autobuild={enabled=true}, maxConcurrentBuilds=1.0, completion={enabled=true, overwrite=true, guessMethodArguments=false, favoriteStaticMembers=[org.junit.Assert.*, org.junit.Assume.*, org.junit.jupiter.api.Assertions.*, org.junit.jupiter.api.Assumptions.*, org.junit.jupiter.api.DynamicContainer.*, org.junit.jupiter.api.DynamicTest.*, org.mockito.Mockito.*, org.mockito.ArgumentMatchers.*, org.mockito.Answers.*], importOrder=[java, javax, com, org]}, progressReports={enabled=true}, foldingRange={enabled=true}, maven={downloadSources=false}, codeGeneration={hashCodeEquals={useJava7Objects=false, useInstanceof=false}, useBlocks=false, generateComments=false, toString={template=${object.className} [${member.name()}=${member.value}, ${otherMembers}], codeStyle=STRING_CONCATENATION, skipNullValues=false, listArrayContents=true, limitElements=0.0}}}}
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-11 10:50:50.535
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-11 10:50:50.539
+!MESSAGE Runner.java isn't on the classpath. Only syntax errors will be reported for file:///Users/cryan/dev/code/p/bazel/bazelbuild-examples/java-tutorial/src/main/java/com/example/cmdline/Runner.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-11 10:50:50.994
+!MESSAGE Reconciled 0. Took 46 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-11 10:50:51.441
+!MESSAGE begin problem for /Runner.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-11 10:50:51.442
+!MESSAGE 0 problems reported for /Runner.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-11 10:50:51.442
+!MESSAGE Validated 1. Took 44 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-11 10:50:53.860
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-11 10:50:53.861
+!MESSAGE Clearing problems for /Runner.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-11 10:51:30.123
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-11 10:51:30.125
+!MESSAGE Runner.java isn't on the classpath. Only syntax errors will be reported for file:///Users/cryan/dev/code/p/bazel/bazelbuild-examples/java-tutorial/src/main/java/com/example/cmdline/Runner.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-11 10:51:30.585
+!MESSAGE Reconciled 0. Took 8 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-11 10:51:31.000
+!MESSAGE begin problem for /Runner.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-11 10:51:31.000
+!MESSAGE 0 problems reported for /Runner.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-11 10:51:31.001
+!MESSAGE Validated 1. Took 14 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-11 10:51:41.321
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-11 10:51:41.322
+!MESSAGE Clearing problems for /Runner.java
+!SESSION 2020-06-28 16:22:21.193 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_232
+java.vendor=AdoptOpenJDK
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Command-line arguments:  -data /Users/cryan/.config/coc/extensions/coc-java-data/jdt_ws_803b803e63034806b04f1422f9cbcc37
+
+!ENTRY org.eclipse.core.resources 2 10035 2020-06-28 16:22:21.854
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-06-28 16:22:23.081
+!MESSAGE class org.eclipse.jdt.ls.core.internal.JavaLanguageServerPlugin is started
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-06-28 16:22:23.218
+!MESSAGE Main thread is waiting
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-06-28 16:22:23.241
+!MESSAGE >> initialize
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-06-28 16:22:23.242
+!MESSAGE Initializing Java Language Server 0.50.0.202001101844
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-06-28 16:22:23.255
+!MESSAGE Static Commands: []
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-06-28 16:22:23.256
+!MESSAGE Non-Static Commands: [java.edit.organizeImports, java.project.updateSourceAttachment, java.project.removeFromSourcePath, java.project.listSourcePaths, java.project.resolveSourceAttachment, java.project.addToSourcePath]
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-06-28 16:22:23.269
+!MESSAGE >> initialized
+
+!ENTRY org.eclipse.core.net 1 0 2020-06-28 16:22:23.283
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-06-28 16:22:29.100
+!MESSAGE Workspace initialized in 5841ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-06-28 16:22:29.176
+!MESSAGE >> initialization job finished
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-06-28 16:22:29.184
+!MESSAGE >> workspace/didChangeConfiguration
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-06-28 16:22:29.195
+!MESSAGE >> New configuration: {java={jdt={ls={vmargs=-noverify -Xmx1G -XX:+UseG1GC -XX:+UseStringDeduplication}}, errors={incompleteClasspath={severity=warning}}, configuration={checkProjectSettingsExclusions=true, updateBuildConfiguration=interactive}, trace={server=off}, import={gradle={enabled=true, wrapper={enabled=true}}, maven={enabled=true}, exclusions=[**/node_modules/**, **/.metadata/**, **/archetype-resources/**, **/META-INF/maven/**]}, referencesCodeLens={enabled=false}, signatureHelp={enabled=false}, implementationsCodeLens={enabled=false}, format={enabled=true, comments={enabled=true}, onType={enabled=true, fixComment={enabled=true}}}, autobuild={enabled=true}, maxConcurrentBuilds=1.0, completion={enabled=true, overwrite=true, guessMethodArguments=false, favoriteStaticMembers=[org.junit.Assert.*, org.junit.Assume.*, org.junit.jupiter.api.Assertions.*, org.junit.jupiter.api.Assumptions.*, org.junit.jupiter.api.DynamicContainer.*, org.junit.jupiter.api.DynamicTest.*, org.mockito.Mockito.*, org.mockito.ArgumentMatchers.*, org.mockito.Answers.*], importOrder=[java, javax, com, org]}, progressReports={enabled=true}, foldingRange={enabled=true}, maven={downloadSources=false}, codeGeneration={hashCodeEquals={useJava7Objects=false, useInstanceof=false}, useBlocks=false, generateComments=false, toString={template=${object.className} [${member.name()}=${member.value}, ${otherMembers}], codeStyle=STRING_CONCATENATION, skipNullValues=false, listArrayContents=true, limitElements=0.0}}}}
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-06-28 16:22:29.196
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-06-28 16:22:29.773
+!MESSAGE Reconciled 0. Took 120 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-06-28 16:22:30.102
+!MESSAGE >> Updating classpath for project bazel_7f852069
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-06-28 16:22:30.234
+!MESSAGE begin problem for /App.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-06-28 16:22:30.234
+!MESSAGE 3 problems reported for /App.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-06-28 16:22:30.238
+!MESSAGE Validated 1. Took 61 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-06-28 16:22:32.524
+!MESSAGE >> build jobs finished
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-06-28 16:22:32.540
+!MESSAGE >> registerFeature 'workspace/didChangeWatchedFiles'
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-06-28 16:22:32.541
+!MESSAGE >> registerFeature 'workspace/didChangeWatchedFiles'
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-06-28 16:22:32.542
+!MESSAGE >> watchers registered
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-06-28 16:23:11.980
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-06-28 16:23:12.085
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-06-28 16:23:12.086
+!MESSAGE TestApp.java isn't on the classpath. Only syntax errors will be reported for file:///Users/cryan/dev/code/p/bazel/bazelbuild-examples/java-maven/src/test/java/com/example/myproject/TestApp.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-06-28 16:23:12.506
+!MESSAGE Reconciled 0. Took 11 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-06-28 16:23:12.927
+!MESSAGE begin problem for /TestApp.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-06-28 16:23:12.928
+!MESSAGE 0 problems reported for /TestApp.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-06-28 16:23:12.928
+!MESSAGE Validated 1. Took 17 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-06-28 16:34:56.623
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-06-28 16:34:56.625
+!MESSAGE Clearing problems for /TestApp.java
+!SESSION 2020-06-28 16:48:20.176 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_232
+java.vendor=AdoptOpenJDK
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Command-line arguments:  -data /Users/cryan/.config/coc/extensions/coc-java-data/jdt_ws_803b803e63034806b04f1422f9cbcc37
+
+!ENTRY org.eclipse.core.resources 2 10035 2020-06-28 16:48:20.701
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-06-28 16:48:22.228
+!MESSAGE class org.eclipse.jdt.ls.core.internal.JavaLanguageServerPlugin is started
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-06-28 16:48:22.308
+!MESSAGE Main thread is waiting
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-06-28 16:48:22.329
+!MESSAGE >> initialize
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-06-28 16:48:22.330
+!MESSAGE Initializing Java Language Server 0.50.0.202001101844
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-06-28 16:48:22.342
+!MESSAGE Static Commands: []
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-06-28 16:48:22.342
+!MESSAGE Non-Static Commands: [java.edit.organizeImports, java.project.updateSourceAttachment, java.project.removeFromSourcePath, java.project.listSourcePaths, java.project.resolveSourceAttachment, java.project.addToSourcePath]
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-06-28 16:48:22.356
+!MESSAGE >> initialized
+
+!ENTRY org.eclipse.core.net 1 0 2020-06-28 16:48:22.366
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-06-28 16:48:27.166
+!MESSAGE Workspace initialized in 4819ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-06-28 16:48:27.248
+!MESSAGE >> initialization job finished
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-06-28 16:48:27.254
+!MESSAGE >> workspace/didChangeConfiguration
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-06-28 16:48:27.263
+!MESSAGE >> New configuration: {java={jdt={ls={vmargs=-noverify -Xmx1G -XX:+UseG1GC -XX:+UseStringDeduplication}}, errors={incompleteClasspath={severity=warning}}, configuration={checkProjectSettingsExclusions=true, updateBuildConfiguration=interactive}, trace={server=off}, import={gradle={enabled=true, wrapper={enabled=true}}, maven={enabled=true}, exclusions=[**/node_modules/**, **/.metadata/**, **/archetype-resources/**, **/META-INF/maven/**]}, referencesCodeLens={enabled=false}, signatureHelp={enabled=false}, implementationsCodeLens={enabled=false}, format={enabled=true, comments={enabled=true}, onType={enabled=true, fixComment={enabled=true}}}, autobuild={enabled=true}, maxConcurrentBuilds=1.0, completion={enabled=true, overwrite=true, guessMethodArguments=false, favoriteStaticMembers=[org.junit.Assert.*, org.junit.Assume.*, org.junit.jupiter.api.Assertions.*, org.junit.jupiter.api.Assumptions.*, org.junit.jupiter.api.DynamicContainer.*, org.junit.jupiter.api.DynamicTest.*, org.mockito.Mockito.*, org.mockito.ArgumentMatchers.*, org.mockito.Answers.*], importOrder=[java, javax, com, org]}, progressReports={enabled=true}, foldingRange={enabled=true}, maven={downloadSources=false}, codeGeneration={hashCodeEquals={useJava7Objects=false, useInstanceof=false}, useBlocks=false, generateComments=false, toString={template=${object.className} [${member.name()}=${member.value}, ${otherMembers}], codeStyle=STRING_CONCATENATION, skipNullValues=false, listArrayContents=true, limitElements=0.0}}}}
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-06-28 16:48:27.264
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-06-28 16:48:27.614
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-06-28 16:48:27.735
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-06-28 16:48:27.769
+!MESSAGE TestApp.java isn't on the classpath. Only syntax errors will be reported for file:///Users/cryan/dev/code/p/bazel/bazelbuild-examples/java-maven/src/test/java/com/example/myproject/TestApp.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-06-28 16:48:28.169
+!MESSAGE >> Updating classpath for project bazel_7f852069
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-06-28 16:48:28.303
+!MESSAGE Reconciled 0. Took 84 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-06-28 16:48:28.908
+!MESSAGE begin problem for /TestApp.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-06-28 16:48:28.909
+!MESSAGE 0 problems reported for /TestApp.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-06-28 16:48:28.911
+!MESSAGE Validated 1. Took 62 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-06-28 16:48:30.241
+!MESSAGE >> build jobs finished
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-06-28 16:48:30.254
+!MESSAGE >> registerFeature 'workspace/didChangeWatchedFiles'
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-06-28 16:48:30.255
+!MESSAGE >> registerFeature 'workspace/didChangeWatchedFiles'
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-06-28 16:48:30.256
+!MESSAGE >> watchers registered
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-06-28 17:04:31.634
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-06-28 17:04:31.636
+!MESSAGE Clearing problems for /TestApp.java

@@ -1,0 +1,18 @@
+!SESSION 2020-06-24 08:06:17.625 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_232
+java.vendor=AdoptOpenJDK
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Command-line arguments:  -data /Users/cryan/.config/coc/extensions/coc-java-data/jdt_ws_a66d484516b142da84b298e6491c5622
+
+This is a continuation of log file /Users/cryan/.config/coc/extensions/coc-java-data/jdt_ws_a66d484516b142da84b298e6491c5622/.metadata/.bak_1.log
+Created Time: 2020-06-24 09:14:01.564
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-06-24 09:14:01.564
+!MESSAGE >> registerFeature 'workspace/didChangeWatchedFiles'
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-06-24 09:14:01.566
+!MESSAGE >> registerFeature 'workspace/didChangeWatchedFiles'
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-06-24 09:14:01.580
+!MESSAGE >> registerFeature 'workspace/didChangeWatchedFiles'

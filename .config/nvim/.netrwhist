@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =3
+let g:netrw_dirhist_3='/Users/cryan/.config/nvim'
+let g:netrw_dirhist_2='/Users/cryan/dev/code/p/neovim'
+let g:netrw_dirhist_1='/Users/cryan/dev/code/p'
+let g:netrw_dirhist_0='/Users/cryan/dev/code'
+let g:netrw_dirhist_9='/Users/cryan/dev'
+let g:netrw_dirhist_8='/Users/cryan'
+let g:netrw_dirhist_7='/Users/cryan/.config'
+let g:netrw_dirhist_6='/Users/cryan/.config/nvim'
+let g:netrw_dirhist_5='/Users/cryan/dev/code/p/typescript'
+let g:netrw_dirhist_4='/Users/cryan/dev/code/p'

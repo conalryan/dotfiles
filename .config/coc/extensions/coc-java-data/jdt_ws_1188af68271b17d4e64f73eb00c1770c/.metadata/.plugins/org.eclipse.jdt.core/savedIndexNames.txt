@@ -1,0 +1,17 @@
+INDEX VERSION 1.131+/Users/cryan/.config/coc/extensions/coc-java-data/jdt_ws_1188af68271b17d4e64f73eb00c1770c/.metadata/.plugins/org.eclipse.jdt.core
+2337366377.index
+998588009.index
+1026401646.index
+2338682979.index
+1271342938.index
+1552408334.index
+2332186387.index
+2847354745.index
+3038990431.index
+2197654083.index
+1024419769.index
+1273346042.index
+3571391171.index
+830571081.index
+3418277339.index
+3842426239.index

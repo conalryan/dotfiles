@@ -1,0 +1,336 @@
+!SESSION 2020-03-30 20:52:00.709 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_232
+java.vendor=AdoptOpenJDK
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Command-line arguments:  -data /Users/cryan/.config/coc/extensions/coc-java-data/jdt_ws_4fcdce3581cdf9129685204aa4d27f48
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-30 20:52:02.050
+!MESSAGE class org.eclipse.jdt.ls.core.internal.JavaLanguageServerPlugin is started
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-30 20:52:02.146
+!MESSAGE Main thread is waiting
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-30 20:52:02.166
+!MESSAGE >> initialize
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-30 20:52:02.167
+!MESSAGE Initializing Java Language Server 0.50.0.202001101844
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-30 20:52:02.177
+!MESSAGE Static Commands: []
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-30 20:52:02.177
+!MESSAGE Non-Static Commands: [java.edit.organizeImports, java.project.updateSourceAttachment, java.project.removeFromSourcePath, java.project.listSourcePaths, java.project.resolveSourceAttachment, java.project.addToSourcePath]
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-30 20:52:02.190
+!MESSAGE >> initialized
+
+!ENTRY org.eclipse.core.net 1 0 2020-03-30 20:52:02.201
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-30 20:52:02.213
+!MESSAGE Creating the Java project jdt.ls-java-project
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-30 20:52:02.717
+!MESSAGE Finished creating the Java project jdt.ls-java-project
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-30 20:52:02.882
+!MESSAGE Try to create an invisible project for the workspace /Users/cryan/dev/code/p/algorithms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-30 20:52:02.882
+!MESSAGE Creating the Java project algorithms_90060fdd
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-30 20:52:02.895
+!MESSAGE Finished creating the Java project algorithms_90060fdd
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-30 20:52:02.921
+!MESSAGE Successfully created a workspace invisible project algorithms_90060fdd
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-30 20:52:02.924
+!MESSAGE Workspace initialized in 744ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-30 20:52:03.004
+!MESSAGE >> initialization job finished
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-30 20:52:03.010
+!MESSAGE >> workspace/didChangeConfiguration
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-30 20:52:03.021
+!MESSAGE >> New configuration: {java={jdt={ls={vmargs=-noverify -Xmx1G -XX:+UseG1GC -XX:+UseStringDeduplication}}, errors={incompleteClasspath={severity=warning}}, configuration={checkProjectSettingsExclusions=true, updateBuildConfiguration=interactive}, trace={server=off}, import={gradle={enabled=true, wrapper={enabled=true}}, maven={enabled=true}, exclusions=[**/node_modules/**, **/.metadata/**, **/archetype-resources/**, **/META-INF/maven/**]}, referencesCodeLens={enabled=false}, signatureHelp={enabled=false}, implementationsCodeLens={enabled=false}, format={enabled=true, comments={enabled=true}, onType={enabled=true, fixComment={enabled=true}}}, autobuild={enabled=true}, maxConcurrentBuilds=1.0, completion={enabled=true, overwrite=true, guessMethodArguments=false, favoriteStaticMembers=[org.junit.Assert.*, org.junit.Assume.*, org.junit.jupiter.api.Assertions.*, org.junit.jupiter.api.Assumptions.*, org.junit.jupiter.api.DynamicContainer.*, org.junit.jupiter.api.DynamicTest.*, org.mockito.Mockito.*, org.mockito.ArgumentMatchers.*, org.mockito.Answers.*], importOrder=[java, javax, com, org]}, progressReports={enabled=true}, foldingRange={enabled=true}, maven={downloadSources=false}, codeGeneration={hashCodeEquals={useJava7Objects=false, useInstanceof=false}, useBlocks=false, generateComments=false, toString={template=${object.className} [${member.name()}=${member.value}, ${otherMembers}], codeStyle=STRING_CONCATENATION, skipNullValues=false, listArrayContents=true, limitElements=0.0}}}}
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-30 20:52:03.022
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-30 20:52:03.521
+!MESSAGE Reconciled 0. Took 182 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-30 20:52:03.745
+!MESSAGE begin problem for /MergeSortFileMapped.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-30 20:52:03.746
+!MESSAGE 2 problems reported for /MergeSortFileMapped.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-30 20:52:03.749
+!MESSAGE Validated 1. Took 217 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-30 20:52:03.756
+!MESSAGE >> Updating classpath for project algorithms_90060fdd
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-30 20:52:03.776
+!MESSAGE >> build jobs finished
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-30 20:52:03.779
+!MESSAGE >> registerFeature 'workspace/didChangeWatchedFiles'
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-30 20:52:03.780
+!MESSAGE >> registerFeature 'workspace/didChangeWatchedFiles'
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-30 20:52:03.781
+!MESSAGE >> watchers registered
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-30 20:52:03.918
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-30 20:52:04.343
+!MESSAGE Reconciled 0. Took 16 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-30 20:52:04.784
+!MESSAGE begin problem for /MergeSortFileMapped.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-30 20:52:04.785
+!MESSAGE 1 problems reported for /MergeSortFileMapped.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-30 20:52:04.785
+!MESSAGE Validated 1. Took 39 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-30 20:52:39.877
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-30 20:52:39.943
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-30 20:52:40.021
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-30 20:52:40.030
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-30 20:52:40.061
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-30 20:52:40.067
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-30 20:52:40.456
+!MESSAGE Reconciled 0. Took 21 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-30 20:52:40.677
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-30 20:52:40.900
+!MESSAGE begin problem for /MergeSortFileMapped.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-30 20:52:40.901
+!MESSAGE 1 problems reported for /MergeSortFileMapped.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-30 20:52:40.902
+!MESSAGE Validated 1. Took 39 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-30 20:52:42.405
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-30 20:52:42.468
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-30 20:52:42.478
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-30 20:52:42.820
+!MESSAGE Reconciled 0. Took 11 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-30 20:52:43.259
+!MESSAGE begin problem for /MergeSortFileMapped.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-30 20:52:43.265
+!MESSAGE 1 problems reported for /MergeSortFileMapped.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-30 20:52:43.265
+!MESSAGE Validated 1. Took 40 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-30 20:52:45.813
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-30 20:52:46.640
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-30 20:52:46.702
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-30 20:52:46.707
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-30 20:52:47.062
+!MESSAGE Reconciled 0. Took 15 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-30 20:52:47.496
+!MESSAGE begin problem for /MergeSortFileMapped.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-30 20:52:47.497
+!MESSAGE 1 problems reported for /MergeSortFileMapped.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-30 20:52:47.497
+!MESSAGE Validated 1. Took 32 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-30 20:52:49.514
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-30 20:52:49.933
+!MESSAGE Reconciled 0. Took 13 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-30 20:52:50.367
+!MESSAGE begin problem for /MergeSortFileMapped.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-30 20:52:50.367
+!MESSAGE 1 problems reported for /MergeSortFileMapped.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-30 20:52:50.368
+!MESSAGE Validated 1. Took 28 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-30 20:52:51.468
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-30 20:52:51.930
+!MESSAGE Reconciled 0. Took 7 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-30 20:52:51.996
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-30 20:52:52.415
+!MESSAGE Reconciled 0. Took 13 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-30 20:52:52.611
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-30 20:52:53.031
+!MESSAGE Reconciled 0. Took 17 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-30 20:52:53.088
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-30 20:52:53.516
+!MESSAGE Reconciled 0. Took 25 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-30 20:52:53.955
+!MESSAGE begin problem for /MergeSortFileMapped.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-30 20:52:53.955
+!MESSAGE 0 problems reported for /MergeSortFileMapped.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-30 20:52:53.956
+!MESSAGE Validated 1. Took 33 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-30 20:52:56.518
+!MESSAGE >> document/willSaveWaitUntil
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-30 20:52:56.526
+!MESSAGE >> document/didSave
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-30 20:52:58.933
+!MESSAGE >> document/willSaveWaitUntil
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-30 20:52:58.935
+!MESSAGE >> document/didSave
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-30 20:53:06.556
+!MESSAGE >> document/willSaveWaitUntil
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-30 20:53:06.559
+!MESSAGE >> document/didSave
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-30 20:56:26.074
+!MESSAGE >> document/didClose
+!SESSION 2020-03-31 19:32:00.427 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_232
+java.vendor=AdoptOpenJDK
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Command-line arguments:  -data /Users/cryan/.config/coc/extensions/coc-java-data/jdt_ws_4fcdce3581cdf9129685204aa4d27f48
+
+!ENTRY org.eclipse.core.resources 2 10035 2020-03-31 19:32:01.689
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-31 19:32:02.897
+!MESSAGE class org.eclipse.jdt.ls.core.internal.JavaLanguageServerPlugin is started
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-31 19:32:03.014
+!MESSAGE Main thread is waiting
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-31 19:32:03.039
+!MESSAGE >> initialize
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-31 19:32:03.060
+!MESSAGE Initializing Java Language Server 0.50.0.202001101844
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-31 19:32:03.082
+!MESSAGE Static Commands: []
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-31 19:32:03.082
+!MESSAGE Non-Static Commands: [java.edit.organizeImports, java.project.updateSourceAttachment, java.project.removeFromSourcePath, java.project.listSourcePaths, java.project.resolveSourceAttachment, java.project.addToSourcePath]
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-31 19:32:03.095
+!MESSAGE >> initialized
+
+!ENTRY org.eclipse.core.net 1 0 2020-03-31 19:32:03.110
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-31 19:32:03.315
+!MESSAGE Workspace initialized in 230ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-31 19:32:03.406
+!MESSAGE >> initialization job finished
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-31 19:32:03.412
+!MESSAGE >> workspace/didChangeConfiguration
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-31 19:32:03.421
+!MESSAGE >> New configuration: {java={jdt={ls={vmargs=-noverify -Xmx1G -XX:+UseG1GC -XX:+UseStringDeduplication}}, errors={incompleteClasspath={severity=warning}}, configuration={checkProjectSettingsExclusions=true, updateBuildConfiguration=interactive}, trace={server=off}, import={gradle={enabled=true, wrapper={enabled=true}}, maven={enabled=true}, exclusions=[**/node_modules/**, **/.metadata/**, **/archetype-resources/**, **/META-INF/maven/**]}, referencesCodeLens={enabled=false}, signatureHelp={enabled=false}, implementationsCodeLens={enabled=false}, format={enabled=true, comments={enabled=true}, onType={enabled=true, fixComment={enabled=true}}}, autobuild={enabled=true}, maxConcurrentBuilds=1.0, completion={enabled=true, overwrite=true, guessMethodArguments=false, favoriteStaticMembers=[org.junit.Assert.*, org.junit.Assume.*, org.junit.jupiter.api.Assertions.*, org.junit.jupiter.api.Assumptions.*, org.junit.jupiter.api.DynamicContainer.*, org.junit.jupiter.api.DynamicTest.*, org.mockito.Mockito.*, org.mockito.ArgumentMatchers.*, org.mockito.Answers.*], importOrder=[java, javax, com, org]}, progressReports={enabled=true}, foldingRange={enabled=true}, maven={downloadSources=false}, codeGeneration={hashCodeEquals={useJava7Objects=false, useInstanceof=false}, useBlocks=false, generateComments=false, toString={template=${object.className} [${member.name()}=${member.value}, ${otherMembers}], codeStyle=STRING_CONCATENATION, skipNullValues=false, listArrayContents=true, limitElements=0.0}}}}
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-31 19:32:03.422
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-31 19:32:03.877
+!MESSAGE Reconciled 0. Took 60 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-31 19:32:03.964
+!MESSAGE begin problem for /SequentialSearch.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-31 19:32:03.964
+!MESSAGE 3 problems reported for /SequentialSearch.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-31 19:32:03.968
+!MESSAGE Validated 1. Took 87 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-31 19:32:03.981
+!MESSAGE >> Updating classpath for project algorithms_90060fdd
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-31 19:32:03.998
+!MESSAGE >> build jobs finished
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-31 19:32:04.002
+!MESSAGE >> registerFeature 'workspace/didChangeWatchedFiles'
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-31 19:32:04.003
+!MESSAGE >> registerFeature 'workspace/didChangeWatchedFiles'
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-31 19:32:04.004
+!MESSAGE >> watchers registered
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-31 19:32:04.268
+!MESSAGE >> document/willSaveWaitUntil
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-31 19:32:04.279
+!MESSAGE >> document/didSave
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-31 19:32:27.290
+!MESSAGE >> document/didClose

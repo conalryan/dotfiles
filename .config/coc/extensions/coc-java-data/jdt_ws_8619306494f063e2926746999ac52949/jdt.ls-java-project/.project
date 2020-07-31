@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>jdt.ls-java-project</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>org.eclipse.jdt.core.javabuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>org.eclipse.jdt.core.javanature</nature>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>src/module1/Book.java</name>
+			<type>1</type>
+			<location>/Users/cryan/dev/code/p/java/frameworks/spring-boot/module1/src/main/java/module1/Book.java</location>
+		</link>
+		<link>
+			<name>src/com/example/demo/DemoApplication.java</name>
+			<type>1</type>
+			<location>//Users/cryan/dev/code/p/java/frameworks/spring-boot/demo/src/main/java/com/example/demo/DemoApplication.java</location>
+		</link>
+		<link>
+			<name>src/main/java/module1/BookController.java</name>
+			<type>1</type>
+			<location>/Users/cryan/dev/code/p/java/frameworks/spring-boot/module1/src/main/java/module1/BookController.java</location>
+		</link>
+		<link>
+			<name>src/main/java/module1/SpringMainModule1.java</name>
+			<type>1</type>
+			<location>/Users/cryan/dev/code/p/java/frameworks/spring-boot/module1/src/main/java/module1/SpringMainModule1.java</location>
+		</link>
+	</linkedResources>
+</projectDescription>

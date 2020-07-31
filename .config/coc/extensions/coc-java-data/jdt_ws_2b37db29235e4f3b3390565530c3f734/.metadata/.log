@@ -1,0 +1,130 @@
+!SESSION 2020-07-06 14:44:56.071 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_232
+java.vendor=AdoptOpenJDK
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Command-line arguments:  -data /Users/cryan/.config/coc/extensions/coc-java-data/jdt_ws_2b37db29235e4f3b3390565530c3f734
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-07-06 14:44:57.744
+!MESSAGE class org.eclipse.jdt.ls.core.internal.JavaLanguageServerPlugin is started
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-07-06 14:44:57.879
+!MESSAGE Main thread is waiting
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-07-06 14:44:57.902
+!MESSAGE >> initialize
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-07-06 14:44:57.903
+!MESSAGE Initializing Java Language Server 0.50.0.202001101844
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-07-06 14:44:57.915
+!MESSAGE Static Commands: []
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-07-06 14:44:57.915
+!MESSAGE Non-Static Commands: [java.edit.organizeImports, java.project.updateSourceAttachment, java.project.removeFromSourcePath, java.project.listSourcePaths, java.project.resolveSourceAttachment, java.project.addToSourcePath]
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-07-06 14:44:57.928
+!MESSAGE >> initialized
+
+!ENTRY org.eclipse.core.net 1 0 2020-07-06 14:44:57.943
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-07-06 14:44:57.961
+!MESSAGE Creating the Java project jdt.ls-java-project
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-07-06 14:44:58.539
+!MESSAGE Finished creating the Java project jdt.ls-java-project
+
+!ENTRY org.eclipse.jdt.ls.core 4 0 2020-07-06 14:44:58.682
+!MESSAGE Initialization failed 
+!STACK 1
+org.eclipse.core.runtime.CoreException: Failed to scan /private/tmp
+	at org.eclipse.jdt.ls.core.internal.managers.BasicFileDetector.scan(BasicFileDetector.java:136)
+	at org.eclipse.jdt.ls.core.internal.managers.GradleProjectImporter.applies(GradleProjectImporter.java:75)
+	at org.eclipse.jdt.ls.core.internal.managers.ProjectsManager.getImporter(ProjectsManager.java:432)
+	at org.eclipse.jdt.ls.core.internal.managers.ProjectsManager.importProjects(ProjectsManager.java:153)
+	at org.eclipse.jdt.ls.core.internal.managers.ProjectsManager.initializeProjects(ProjectsManager.java:145)
+	at org.eclipse.jdt.ls.core.internal.handlers.InitHandler$1.runInWorkspace(InitHandler.java:267)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.nio.file.AccessDeniedException: /private/tmp/cvcd
+	at sun.nio.fs.UnixException.translateToIOException(UnixException.java:84)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:102)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:107)
+	at sun.nio.fs.UnixFileSystemProvider.newDirectoryStream(UnixFileSystemProvider.java:407)
+	at java.nio.file.Files.newDirectoryStream(Files.java:457)
+	at java.nio.file.FileTreeWalker.visit(FileTreeWalker.java:300)
+	at java.nio.file.FileTreeWalker.next(FileTreeWalker.java:372)
+	at java.nio.file.Files.walkFileTree(Files.java:2706)
+	at org.eclipse.jdt.ls.core.internal.managers.BasicFileDetector.scanDir(BasicFileDetector.java:170)
+	at org.eclipse.jdt.ls.core.internal.managers.BasicFileDetector.scan(BasicFileDetector.java:134)
+	... 7 more
+!SUBENTRY 1 org.eclipse.jdt.ls.core 4 0 2020-07-06 14:44:58.683
+!MESSAGE Failed to scan /private/tmp
+!STACK 0
+java.nio.file.AccessDeniedException: /private/tmp/cvcd
+	at sun.nio.fs.UnixException.translateToIOException(UnixException.java:84)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:102)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:107)
+	at sun.nio.fs.UnixFileSystemProvider.newDirectoryStream(UnixFileSystemProvider.java:407)
+	at java.nio.file.Files.newDirectoryStream(Files.java:457)
+	at java.nio.file.FileTreeWalker.visit(FileTreeWalker.java:300)
+	at java.nio.file.FileTreeWalker.next(FileTreeWalker.java:372)
+	at java.nio.file.Files.walkFileTree(Files.java:2706)
+	at org.eclipse.jdt.ls.core.internal.managers.BasicFileDetector.scanDir(BasicFileDetector.java:170)
+	at org.eclipse.jdt.ls.core.internal.managers.BasicFileDetector.scan(BasicFileDetector.java:134)
+	at org.eclipse.jdt.ls.core.internal.managers.GradleProjectImporter.applies(GradleProjectImporter.java:75)
+	at org.eclipse.jdt.ls.core.internal.managers.ProjectsManager.getImporter(ProjectsManager.java:432)
+	at org.eclipse.jdt.ls.core.internal.managers.ProjectsManager.importProjects(ProjectsManager.java:153)
+	at org.eclipse.jdt.ls.core.internal.managers.ProjectsManager.initializeProjects(ProjectsManager.java:145)
+	at org.eclipse.jdt.ls.core.internal.handlers.InitHandler$1.runInWorkspace(InitHandler.java:267)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-07-06 14:44:58.861
+!MESSAGE >> initialization job finished
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-07-06 14:44:58.867
+!MESSAGE >> workspace/didChangeConfiguration
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-07-06 14:44:58.870
+!MESSAGE >> java/buildWorkspace (incremental)
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-07-06 14:44:58.881
+!MESSAGE >> New configuration: {java={jdt={ls={vmargs=-noverify -Xmx1G -XX:+UseG1GC -XX:+UseStringDeduplication}}, errors={incompleteClasspath={severity=warning}}, configuration={checkProjectSettingsExclusions=true, updateBuildConfiguration=interactive}, trace={server=off}, import={gradle={enabled=true, wrapper={enabled=true}}, maven={enabled=true}, exclusions=[**/node_modules/**, **/.metadata/**, **/archetype-resources/**, **/META-INF/maven/**]}, referencesCodeLens={enabled=false}, signatureHelp={enabled=false}, implementationsCodeLens={enabled=false}, format={enabled=true, comments={enabled=true}, onType={enabled=true, fixComment={enabled=true}}}, autobuild={enabled=true}, maxConcurrentBuilds=1.0, completion={enabled=true, overwrite=true, guessMethodArguments=false, favoriteStaticMembers=[org.junit.Assert.*, org.junit.Assume.*, org.junit.jupiter.api.Assertions.*, org.junit.jupiter.api.Assumptions.*, org.junit.jupiter.api.DynamicContainer.*, org.junit.jupiter.api.DynamicTest.*, org.mockito.Mockito.*, org.mockito.ArgumentMatchers.*, org.mockito.Answers.*], importOrder=[java, javax, com, org]}, progressReports={enabled=true}, foldingRange={enabled=true}, maven={downloadSources=false}, codeGeneration={hashCodeEquals={useJava7Objects=false, useInstanceof=false}, useBlocks=false, generateComments=false, toString={template=${object.className} [${member.name()}=${member.value}, ${otherMembers}], codeStyle=STRING_CONCATENATION, skipNullValues=false, listArrayContents=true, limitElements=0.0}}}}
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-07-06 14:44:58.883
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-07-06 14:44:59.059
+!MESSAGE Classpath is incomplete. Only syntax errors will be reported for file:///private/tmp/out/jaxrx-cxf/src/gen/java/io/swagger/api/PetApi.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-07-06 14:44:59.341
+!MESSAGE Reconciled 0. Took 81 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-07-06 14:44:59.456
+!MESSAGE begin problem for /PetApi.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-07-06 14:44:59.457
+!MESSAGE 0 problems reported for /PetApi.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-07-06 14:44:59.459
+!MESSAGE Validated 1. Took 111 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-07-06 14:44:59.481
+!MESSAGE >> build jobs finished
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-07-06 14:44:59.483
+!MESSAGE >> registerFeature 'workspace/didChangeWatchedFiles'
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-07-06 14:44:59.488
+!MESSAGE >> registerFeature 'workspace/didChangeWatchedFiles'
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-07-06 14:44:59.491
+!MESSAGE >> watchers registered
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-07-06 15:16:02.261
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-07-06 15:16:02.266
+!MESSAGE Clearing problems for /PetApi.java

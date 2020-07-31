@@ -1,0 +1,153 @@
+!SESSION 2020-07-06 14:01:12.921 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_232
+java.vendor=AdoptOpenJDK
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Command-line arguments:  -data /Users/cryan/.config/coc/extensions/coc-java-data/jdt_ws_ad9a1b7ac8ce94b947a8c41fb0120b3f
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-07-06 14:01:14.965
+!MESSAGE class org.eclipse.jdt.ls.core.internal.JavaLanguageServerPlugin is started
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-07-06 14:01:15.098
+!MESSAGE Main thread is waiting
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-07-06 14:01:15.121
+!MESSAGE >> initialize
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-07-06 14:01:15.122
+!MESSAGE Initializing Java Language Server 0.50.0.202001101844
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-07-06 14:01:15.134
+!MESSAGE Static Commands: []
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-07-06 14:01:15.135
+!MESSAGE Non-Static Commands: [java.edit.organizeImports, java.project.updateSourceAttachment, java.project.removeFromSourcePath, java.project.listSourcePaths, java.project.resolveSourceAttachment, java.project.addToSourcePath]
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-07-06 14:01:15.148
+!MESSAGE >> initialized
+
+!ENTRY org.eclipse.core.net 1 0 2020-07-06 14:01:15.163
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-07-06 14:01:15.181
+!MESSAGE Creating the Java project jdt.ls-java-project
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-07-06 14:01:15.752
+!MESSAGE Finished creating the Java project jdt.ls-java-project
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-07-06 14:01:15.987
+!MESSAGE Importing Maven project(s)
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-07-06 14:02:00.386
+!MESSAGE Workspace initialized in 45248ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-07-06 14:02:00.463
+!MESSAGE >> initialization job finished
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-07-06 14:02:00.468
+!MESSAGE >> workspace/didChangeConfiguration
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-07-06 14:02:00.476
+!MESSAGE >> New configuration: {java={jdt={ls={vmargs=-noverify -Xmx1G -XX:+UseG1GC -XX:+UseStringDeduplication}}, errors={incompleteClasspath={severity=warning}}, configuration={checkProjectSettingsExclusions=true, updateBuildConfiguration=interactive}, trace={server=off}, import={gradle={enabled=true, wrapper={enabled=true}}, maven={enabled=true}, exclusions=[**/node_modules/**, **/.metadata/**, **/archetype-resources/**, **/META-INF/maven/**]}, referencesCodeLens={enabled=false}, signatureHelp={enabled=false}, implementationsCodeLens={enabled=false}, format={enabled=true, comments={enabled=true}, onType={enabled=true, fixComment={enabled=true}}}, autobuild={enabled=true}, maxConcurrentBuilds=1.0, completion={enabled=true, overwrite=true, guessMethodArguments=false, favoriteStaticMembers=[org.junit.Assert.*, org.junit.Assume.*, org.junit.jupiter.api.Assertions.*, org.junit.jupiter.api.Assumptions.*, org.junit.jupiter.api.DynamicContainer.*, org.junit.jupiter.api.DynamicTest.*, org.mockito.Mockito.*, org.mockito.ArgumentMatchers.*, org.mockito.Answers.*], importOrder=[java, javax, com, org]}, progressReports={enabled=true}, foldingRange={enabled=true}, maven={downloadSources=false}, codeGeneration={hashCodeEquals={useJava7Objects=false, useInstanceof=false}, useBlocks=false, generateComments=false, toString={template=${object.className} [${member.name()}=${member.value}, ${otherMembers}], codeStyle=STRING_CONCATENATION, skipNullValues=false, listArrayContents=true, limitElements=0.0}}}}
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-07-06 14:02:00.478
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-07-06 14:02:01.335
+!MESSAGE Reconciled 0. Took 187 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-07-06 14:02:01.597
+!MESSAGE begin problem for /PetApi.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-07-06 14:02:01.598
+!MESSAGE 6 problems reported for /PetApi.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-07-06 14:02:01.601
+!MESSAGE Validated 1. Took 257 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-07-06 14:02:01.619
+!MESSAGE >> build jobs finished
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-07-06 14:02:01.675
+!MESSAGE >> registerFeature 'workspace/didChangeWatchedFiles'
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-07-06 14:02:01.678
+!MESSAGE >> registerFeature 'workspace/didChangeWatchedFiles'
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-07-06 14:02:01.679
+!MESSAGE >> watchers registered
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-07-06 14:02:22.392
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-07-06 14:02:22.502
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-07-06 14:02:22.944
+!MESSAGE Reconciled 0. Took 30 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-07-06 14:02:23.379
+!MESSAGE begin problem for /StoreApi.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-07-06 14:02:23.380
+!MESSAGE 7 problems reported for /StoreApi.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-07-06 14:02:23.380
+!MESSAGE Validated 1. Took 31 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-07-06 14:02:41.585
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-07-06 14:02:41.697
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-07-06 14:02:42.125
+!MESSAGE Reconciled 0. Took 22 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-07-06 14:02:42.603
+!MESSAGE begin problem for /UserApi.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-07-06 14:02:42.604
+!MESSAGE 7 problems reported for /UserApi.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-07-06 14:02:42.604
+!MESSAGE Validated 1. Took 28 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-07-06 14:02:51.074
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-07-06 14:02:51.177
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-07-06 14:02:51.611
+!MESSAGE Reconciled 0. Took 26 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-07-06 14:02:52.050
+!MESSAGE begin problem for /PetApiServiceImpl.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-07-06 14:02:52.050
+!MESSAGE 16 problems reported for /PetApiServiceImpl.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-07-06 14:02:52.051
+!MESSAGE Validated 1. Took 34 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-07-06 14:03:05.022
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-07-06 14:03:05.137
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-07-06 14:03:05.580
+!MESSAGE Reconciled 0. Took 36 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-07-06 14:03:06.025
+!MESSAGE begin problem for /PetApiTest.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-07-06 14:03:06.026
+!MESSAGE 31 problems reported for /PetApiTest.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-07-06 14:03:06.027
+!MESSAGE Validated 1. Took 43 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-07-06 14:13:03.348
+!MESSAGE >> document/didClose

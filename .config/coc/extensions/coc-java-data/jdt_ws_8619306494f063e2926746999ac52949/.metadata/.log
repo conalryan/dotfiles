@@ -1,0 +1,750 @@
+!SESSION 2020-03-03 10:12:53.777 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_232
+java.vendor=AdoptOpenJDK
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Command-line arguments:  -data /Users/cryan/.config/coc/extensions/coc-java-data/jdt_ws_8619306494f063e2926746999ac52949
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:12:56.484
+!MESSAGE class org.eclipse.jdt.ls.core.internal.JavaLanguageServerPlugin is started
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:12:56.655
+!MESSAGE Main thread is waiting
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:12:56.684
+!MESSAGE >> initialize
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:12:56.685
+!MESSAGE Initializing Java Language Server 0.50.0.202001101844
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:12:56.701
+!MESSAGE Static Commands: []
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:12:56.701
+!MESSAGE Non-Static Commands: [java.edit.organizeImports, java.project.updateSourceAttachment, java.project.removeFromSourcePath, java.project.listSourcePaths, java.project.resolveSourceAttachment, java.project.addToSourcePath]
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:12:56.717
+!MESSAGE >> initialized
+
+!ENTRY org.eclipse.core.net 1 0 2020-03-03 10:12:56.736
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:12:56.758
+!MESSAGE Creating the Java project jdt.ls-java-project
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:12:57.336
+!MESSAGE Finished creating the Java project jdt.ls-java-project
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:12:57.826
+!MESSAGE Importing Gradle project(s)
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:13:06.639
+!MESSAGE Workspace initialized in 9932ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:13:06.659
+!MESSAGE >> initialization job finished
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:13:06.664
+!MESSAGE >> workspace/didChangeConfiguration
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:13:06.673
+!MESSAGE >> New configuration: {java={jdt={ls={vmargs=-noverify -Xmx1G -XX:+UseG1GC -XX:+UseStringDeduplication}}, errors={incompleteClasspath={severity=warning}}, configuration={checkProjectSettingsExclusions=true, updateBuildConfiguration=interactive}, trace={server=off}, import={gradle={enabled=true, wrapper={enabled=true}}, maven={enabled=true}, exclusions=[**/node_modules/**, **/.metadata/**, **/archetype-resources/**, **/META-INF/maven/**]}, referencesCodeLens={enabled=false}, signatureHelp={enabled=false}, implementationsCodeLens={enabled=false}, format={enabled=true, comments={enabled=true}, onType={enabled=true, fixComment={enabled=true}}}, autobuild={enabled=true}, maxConcurrentBuilds=1.0, completion={enabled=true, overwrite=true, guessMethodArguments=false, favoriteStaticMembers=[org.junit.Assert.*, org.junit.Assume.*, org.junit.jupiter.api.Assertions.*, org.junit.jupiter.api.Assumptions.*, org.junit.jupiter.api.DynamicContainer.*, org.junit.jupiter.api.DynamicTest.*, org.mockito.Mockito.*, org.mockito.ArgumentMatchers.*, org.mockito.Answers.*], importOrder=[java, javax, com, org]}, progressReports={enabled=true}, foldingRange={enabled=true}, maven={downloadSources=false}, codeGeneration={hashCodeEquals={useJava7Objects=false, useInstanceof=false}, useBlocks=false, generateComments=false, toString={template=${object.className} [${member.name()}=${member.value}, ${otherMembers}], codeStyle=STRING_CONCATENATION, skipNullValues=false, listArrayContents=true, limitElements=0.0}}}}
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:13:06.674
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:13:06.735
+!MESSAGE Classpath is incomplete. Only syntax errors will be reported for file:///Users/cryan/dev/code/p/java/frameworks/spring-boot/module1/src/main/java/module1/Book.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:13:07.057
+!MESSAGE Reconciled 0. Took 49 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:13:07.110
+!MESSAGE begin problem for /Book.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:13:07.110
+!MESSAGE 0 problems reported for /Book.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:13:07.113
+!MESSAGE Validated 1. Took 52 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:13:07.136
+!MESSAGE >> build jobs finished
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:13:07.138
+!MESSAGE >> registerFeature 'workspace/didChangeWatchedFiles'
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:13:07.139
+!MESSAGE >> registerFeature 'workspace/didChangeWatchedFiles'
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:13:07.140
+!MESSAGE >> watchers registered
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:13:17.210
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:13:17.213
+!MESSAGE Clearing problems for /Book.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:13:17.310
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:13:17.328
+!MESSAGE Classpath is incomplete. Only syntax errors will be reported for file:///Users/cryan/dev/code/p/java/frameworks/spring-boot/module1/src/main/java/module1/BookController.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:13:17.789
+!MESSAGE Reconciled 0. Took 52 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:13:18.227
+!MESSAGE begin problem for /BookController.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:13:18.228
+!MESSAGE 0 problems reported for /BookController.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:13:18.228
+!MESSAGE Validated 1. Took 35 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:13:29.279
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:13:29.291
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:13:29.733
+!MESSAGE Reconciled 0. Took 37 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:13:30.175
+!MESSAGE begin problem for /BookController.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:13:30.176
+!MESSAGE The declared package "module1" does not match the expected package "main.java.module1" is of type PackageIsNotExpectedPackage
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:13:30.176
+!MESSAGE 2 problems reported for /BookController.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:13:30.177
+!MESSAGE Validated 1. Took 39 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:13:36.767
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:13:37.178
+!MESSAGE Reconciled 0. Took 5 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:13:37.587
+!MESSAGE begin problem for /BookController.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:13:37.587
+!MESSAGE 0 problems reported for /BookController.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:13:37.588
+!MESSAGE Validated 1. Took 5 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:13:42.511
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:13:42.514
+!MESSAGE Clearing problems for /BookController.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:13:42.588
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:13:42.591
+!MESSAGE Classpath is incomplete. Only syntax errors will be reported for file:///Users/cryan/dev/code/p/java/frameworks/spring-boot/module1/src/main/java/module1/Book.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:13:43.004
+!MESSAGE Reconciled 0. Took 7 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:13:43.419
+!MESSAGE begin problem for /Book.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:13:43.420
+!MESSAGE 0 problems reported for /Book.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:13:43.420
+!MESSAGE Validated 1. Took 10 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:13:47.145
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:13:47.148
+!MESSAGE Clearing problems for /Book.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:13:47.223
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:13:47.224
+!MESSAGE Classpath is incomplete. Only syntax errors will be reported for file:///Users/cryan/dev/code/p/java/frameworks/spring-boot/module1/src/main/java/module1/BookController.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:13:47.633
+!MESSAGE Reconciled 0. Took 3 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:13:48.040
+!MESSAGE begin problem for /BookController.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:13:48.040
+!MESSAGE 0 problems reported for /BookController.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:13:48.040
+!MESSAGE Validated 1. Took 4 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:13:49.630
+!MESSAGE >> workspace/didChangeConfiguration
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:13:49.641
+!MESSAGE >> New configuration: {java={jdt={ls={vmargs=-noverify -Xmx1G -XX:+UseG1GC -XX:+UseStringDeduplication}}, errors={incompleteClasspath={severity=ignore}}, configuration={checkProjectSettingsExclusions=true, updateBuildConfiguration=interactive}, trace={server=off}, import={gradle={enabled=true, wrapper={enabled=true}}, maven={enabled=true}, exclusions=[**/node_modules/**, **/.metadata/**, **/archetype-resources/**, **/META-INF/maven/**]}, referencesCodeLens={enabled=false}, signatureHelp={enabled=false}, implementationsCodeLens={enabled=false}, format={enabled=true, comments={enabled=true}, onType={enabled=true, fixComment={enabled=true}}}, autobuild={enabled=true}, maxConcurrentBuilds=1.0, completion={enabled=true, overwrite=true, guessMethodArguments=false, favoriteStaticMembers=[org.junit.Assert.*, org.junit.Assume.*, org.junit.jupiter.api.Assertions.*, org.junit.jupiter.api.Assumptions.*, org.junit.jupiter.api.DynamicContainer.*, org.junit.jupiter.api.DynamicTest.*, org.mockito.Mockito.*, org.mockito.ArgumentMatchers.*, org.mockito.Answers.*], importOrder=[java, javax, com, org]}, progressReports={enabled=true}, foldingRange={enabled=true}, maven={downloadSources=false}, codeGeneration={hashCodeEquals={useJava7Objects=false, useInstanceof=false}, useBlocks=false, generateComments=false, toString={template=${object.className} [${member.name()}=${member.value}, ${otherMembers}], codeStyle=STRING_CONCATENATION, skipNullValues=false, listArrayContents=true, limitElements=0.0}}}}
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:13:51.385
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:13:51.824
+!MESSAGE Reconciled 0. Took 32 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:13:52.261
+!MESSAGE begin problem for /BookController.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:13:52.262
+!MESSAGE 1 problems reported for /BookController.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:13:52.263
+!MESSAGE Validated 1. Took 34 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:13:56.074
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:13:56.213
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:13:56.628
+!MESSAGE Reconciled 0. Took 8 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:13:57.045
+!MESSAGE begin problem for /BookController.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:13:57.046
+!MESSAGE The declared package "module1" does not match the expected package "main.java.module1" is of type PackageIsNotExpectedPackage
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:13:57.047
+!MESSAGE 1 problems reported for /BookController.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:13:57.047
+!MESSAGE Validated 1. Took 14 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:13:58.917
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:13:59.332
+!MESSAGE Reconciled 0. Took 7 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:13:59.408
+!MESSAGE >> document/willSaveWaitUntil
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:13:59.415
+!MESSAGE >> document/didSave
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:13:59.749
+!MESSAGE begin problem for /BookController.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:13:59.749
+!MESSAGE The declared package "module1" does not match the expected package "main.java.module1" is of type PackageIsNotExpectedPackage
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:13:59.750
+!MESSAGE 1 problems reported for /BookController.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:13:59.750
+!MESSAGE Validated 1. Took 13 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:14:30.018
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:14:30.020
+!MESSAGE Clearing problems for /BookController.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:14:30.117
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:14:30.127
+!MESSAGE Classpath is incomplete. Only syntax errors will be reported for file:///Users/cryan/dev/code/p/java/frameworks/spring-boot/module1/src/main/java/module1/SpringMainModule1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:14:30.535
+!MESSAGE Reconciled 0. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:14:30.813
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:14:31.037
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:14:31.459
+!MESSAGE Reconciled 0. Took 14 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:14:31.726
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:14:32.143
+!MESSAGE Reconciled 0. Took 11 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:14:32.464
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:14:32.769
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:14:33.191
+!MESSAGE Reconciled 0. Took 12 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:14:33.667
+!MESSAGE begin problem for /SpringMainModule1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:14:33.668
+!MESSAGE The declared package "module1" does not match the expected package "main.java.module1" is of type PackageIsNotExpectedPackage
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:14:33.668
+!MESSAGE 2 problems reported for /SpringMainModule1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:14:33.668
+!MESSAGE Validated 1. Took 22 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:14:34.058
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:14:34.475
+!MESSAGE Reconciled 0. Took 11 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:14:34.899
+!MESSAGE begin problem for /SpringMainModule1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:14:34.899
+!MESSAGE The declared package "module1" does not match the expected package "main.java.module1" is of type PackageIsNotExpectedPackage
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:14:34.900
+!MESSAGE 2 problems reported for /SpringMainModule1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:14:34.900
+!MESSAGE Validated 1. Took 23 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:14:34.979
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:14:35.396
+!MESSAGE Reconciled 0. Took 11 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:14:35.824
+!MESSAGE begin problem for /SpringMainModule1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:14:35.831
+!MESSAGE The declared package "module1" does not match the expected package "main.java.module1" is of type PackageIsNotExpectedPackage
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:14:35.831
+!MESSAGE 2 problems reported for /SpringMainModule1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:14:35.832
+!MESSAGE Validated 1. Took 31 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:14:36.015
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:14:36.428
+!MESSAGE Reconciled 0. Took 6 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:14:36.519
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:14:36.938
+!MESSAGE Reconciled 0. Took 10 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:14:37.355
+!MESSAGE begin problem for /SpringMainModule1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:14:37.355
+!MESSAGE The declared package "module1" does not match the expected package "main.java.module1" is of type PackageIsNotExpectedPackage
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:14:37.356
+!MESSAGE 2 problems reported for /SpringMainModule1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:14:37.356
+!MESSAGE Validated 1. Took 15 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:14:37.546
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:14:37.964
+!MESSAGE Reconciled 0. Took 9 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:14:38.224
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:14:38.624
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:14:38.994
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:14:39.459
+!MESSAGE Reconciled 0. Took 11 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:14:39.878
+!MESSAGE begin problem for /SpringMainModule1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:14:39.879
+!MESSAGE The declared package "module1" does not match the expected package "main.java.module1" is of type PackageIsNotExpectedPackage
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:14:39.879
+!MESSAGE 6 problems reported for /SpringMainModule1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:14:39.880
+!MESSAGE Validated 1. Took 19 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:14:40.283
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:14:40.698
+!MESSAGE Reconciled 0. Took 8 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:14:41.123
+!MESSAGE begin problem for /SpringMainModule1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:14:41.123
+!MESSAGE The declared package "module1" does not match the expected package "main.java.module1" is of type PackageIsNotExpectedPackage
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:14:41.123
+!MESSAGE 6 problems reported for /SpringMainModule1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:14:41.124
+!MESSAGE Validated 1. Took 20 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:14:42.251
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:14:42.668
+!MESSAGE Reconciled 0. Took 10 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:14:43.088
+!MESSAGE begin problem for /SpringMainModule1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:14:43.089
+!MESSAGE The declared package "module1" does not match the expected package "main.java.module1" is of type PackageIsNotExpectedPackage
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:14:43.089
+!MESSAGE 6 problems reported for /SpringMainModule1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:14:43.090
+!MESSAGE Validated 1. Took 18 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:14:43.515
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:14:43.729
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:14:44.191
+!MESSAGE Reconciled 0. Took 7 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:14:44.613
+!MESSAGE begin problem for /SpringMainModule1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:14:44.614
+!MESSAGE The declared package "module1" does not match the expected package "main.java.module1" is of type PackageIsNotExpectedPackage
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:14:44.614
+!MESSAGE 6 problems reported for /SpringMainModule1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:14:44.614
+!MESSAGE Validated 1. Took 17 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:14:45.445
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:14:45.681
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:14:45.903
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:14:46.172
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:14:46.588
+!MESSAGE Reconciled 0. Took 7 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:14:47.008
+!MESSAGE begin problem for /SpringMainModule1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:14:47.008
+!MESSAGE The declared package "module1" does not match the expected package "main.java.module1" is of type PackageIsNotExpectedPackage
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:14:47.009
+!MESSAGE 6 problems reported for /SpringMainModule1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:14:47.009
+!MESSAGE Validated 1. Took 17 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:14:50.831
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:14:51.244
+!MESSAGE Reconciled 0. Took 8 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:14:51.716
+!MESSAGE begin problem for /SpringMainModule1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:14:51.716
+!MESSAGE The declared package "module1" does not match the expected package "main.java.module1" is of type PackageIsNotExpectedPackage
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:14:51.716
+!MESSAGE 6 problems reported for /SpringMainModule1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:14:51.717
+!MESSAGE Validated 1. Took 18 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:14:51.919
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:14:52.333
+!MESSAGE Reconciled 0. Took 5 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:14:52.750
+!MESSAGE begin problem for /SpringMainModule1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:14:52.751
+!MESSAGE The declared package "module1" does not match the expected package "main.java.module1" is of type PackageIsNotExpectedPackage
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:14:52.751
+!MESSAGE 6 problems reported for /SpringMainModule1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:14:52.752
+!MESSAGE Validated 1. Took 15 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:14:54.173
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:14:54.590
+!MESSAGE Reconciled 0. Took 9 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:14:54.792
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:14:55.216
+!MESSAGE Reconciled 0. Took 16 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:14:55.291
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:14:55.700
+!MESSAGE Reconciled 0. Took 6 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:14:56.115
+!MESSAGE begin problem for /SpringMainModule1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:14:56.115
+!MESSAGE The declared package "module1" does not match the expected package "main.java.module1" is of type PackageIsNotExpectedPackage
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:14:56.116
+!MESSAGE 6 problems reported for /SpringMainModule1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:14:56.116
+!MESSAGE Validated 1. Took 15 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:14:56.656
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:14:57.070
+!MESSAGE Reconciled 0. Took 10 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:14:57.491
+!MESSAGE begin problem for /SpringMainModule1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:14:57.491
+!MESSAGE The declared package "module1" does not match the expected package "main.java.module1" is of type PackageIsNotExpectedPackage
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:14:57.492
+!MESSAGE 9 problems reported for /SpringMainModule1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:14:57.492
+!MESSAGE Validated 1. Took 17 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:15:12.748
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:15:13.168
+!MESSAGE Reconciled 0. Took 10 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:15:13.587
+!MESSAGE begin problem for /SpringMainModule1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:15:13.588
+!MESSAGE The declared package "module1" does not match the expected package "main.java.module1" is of type PackageIsNotExpectedPackage
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:15:13.588
+!MESSAGE 9 problems reported for /SpringMainModule1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:15:13.588
+!MESSAGE Validated 1. Took 17 ms
+!SESSION 2020-03-03 10:15:39.801 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_232
+java.vendor=AdoptOpenJDK
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Command-line arguments:  -data /Users/cryan/.config/coc/extensions/coc-java-data/jdt_ws_8619306494f063e2926746999ac52949
+
+!ENTRY org.eclipse.core.resources 2 10035 2020-03-03 10:15:40.366
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:15:41.294
+!MESSAGE class org.eclipse.jdt.ls.core.internal.JavaLanguageServerPlugin is started
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:15:41.383
+!MESSAGE Main thread is waiting
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:15:41.410
+!MESSAGE >> initialize
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:15:41.411
+!MESSAGE Initializing Java Language Server 0.50.0.202001101844
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:15:41.424
+!MESSAGE Static Commands: []
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:15:41.424
+!MESSAGE Non-Static Commands: [java.edit.organizeImports, java.project.updateSourceAttachment, java.project.removeFromSourcePath, java.project.listSourcePaths, java.project.resolveSourceAttachment, java.project.addToSourcePath]
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:15:41.465
+!MESSAGE >> initialized
+
+!ENTRY org.eclipse.core.net 1 0 2020-03-03 10:15:41.476
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:15:41.715
+!MESSAGE Importing Gradle project(s)
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:15:42.740
+!MESSAGE Workspace initialized in 1293ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:15:42.782
+!MESSAGE >> initialization job finished
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:15:42.790
+!MESSAGE >> workspace/didChangeConfiguration
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:15:42.805
+!MESSAGE >> New configuration: {java={jdt={ls={vmargs=-noverify -Xmx1G -XX:+UseG1GC -XX:+UseStringDeduplication}}, errors={incompleteClasspath={severity=warning}}, configuration={checkProjectSettingsExclusions=true, updateBuildConfiguration=interactive}, trace={server=off}, import={gradle={enabled=true, wrapper={enabled=true}}, maven={enabled=true}, exclusions=[**/node_modules/**, **/.metadata/**, **/archetype-resources/**, **/META-INF/maven/**]}, referencesCodeLens={enabled=false}, signatureHelp={enabled=false}, implementationsCodeLens={enabled=false}, format={enabled=true, comments={enabled=true}, onType={enabled=true, fixComment={enabled=true}}}, autobuild={enabled=true}, maxConcurrentBuilds=1.0, completion={enabled=true, overwrite=true, guessMethodArguments=false, favoriteStaticMembers=[org.junit.Assert.*, org.junit.Assume.*, org.junit.jupiter.api.Assertions.*, org.junit.jupiter.api.Assumptions.*, org.junit.jupiter.api.DynamicContainer.*, org.junit.jupiter.api.DynamicTest.*, org.mockito.Mockito.*, org.mockito.ArgumentMatchers.*, org.mockito.Answers.*], importOrder=[java, javax, com, org]}, progressReports={enabled=true}, foldingRange={enabled=true}, maven={downloadSources=false}, codeGeneration={hashCodeEquals={useJava7Objects=false, useInstanceof=false}, useBlocks=false, generateComments=false, toString={template=${object.className} [${member.name()}=${member.value}, ${otherMembers}], codeStyle=STRING_CONCATENATION, skipNullValues=false, listArrayContents=true, limitElements=0.0}}}}
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:15:42.806
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:15:43.053
+!MESSAGE Classpath is incomplete. Only syntax errors will be reported for file:///Users/cryan/dev/code/p/java/frameworks/spring-boot/module1/src/main/java/module1/SpringMainModule1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:15:43.235
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:15:43.342
+!MESSAGE Reconciled 0. Took 21 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:15:43.379
+!MESSAGE begin problem for /SpringMainModule1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:15:43.380
+!MESSAGE The declared package "module1" does not match the expected package "main.java.module1" is of type PackageIsNotExpectedPackage
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:15:43.381
+!MESSAGE 2 problems reported for /SpringMainModule1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:15:43.383
+!MESSAGE Validated 1. Took 27 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:15:43.400
+!MESSAGE >> build jobs finished
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:15:43.401
+!MESSAGE >> registerFeature 'workspace/didChangeWatchedFiles'
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:15:43.402
+!MESSAGE >> registerFeature 'workspace/didChangeWatchedFiles'
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-03-03 10:15:43.404
+!MESSAGE >> watchers registered
+!SESSION 2020-06-03 13:04:55.055 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_232
+java.vendor=AdoptOpenJDK
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Command-line arguments:  -data /Users/cryan/.config/coc/extensions/coc-java-data/jdt_ws_8619306494f063e2926746999ac52949
+
+!ENTRY org.eclipse.core.resources 2 10035 2020-06-03 13:04:55.578
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.core.net 1 0 2020-06-03 13:04:55.905
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-06-03 13:04:56.498
+!MESSAGE class org.eclipse.jdt.ls.core.internal.JavaLanguageServerPlugin is started
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-06-03 13:04:56.580
+!MESSAGE Main thread is waiting
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-06-03 13:04:56.599
+!MESSAGE >> initialize
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-06-03 13:04:56.600
+!MESSAGE Initializing Java Language Server 0.50.0.202001101844
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-06-03 13:04:56.611
+!MESSAGE Static Commands: []
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-06-03 13:04:56.611
+!MESSAGE Non-Static Commands: [java.edit.organizeImports, java.project.updateSourceAttachment, java.project.removeFromSourcePath, java.project.listSourcePaths, java.project.resolveSourceAttachment, java.project.addToSourcePath]
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-06-03 13:04:56.650
+!MESSAGE >> initialized
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-06-03 13:04:56.926
+!MESSAGE Importing Gradle project(s)
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-06-03 13:05:00.032
+!MESSAGE Workspace initialized in 3398ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-06-03 13:05:00.122
+!MESSAGE >> initialization job finished
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-06-03 13:05:00.128
+!MESSAGE >> workspace/didChangeConfiguration
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-06-03 13:05:00.139
+!MESSAGE >> New configuration: {java={jdt={ls={vmargs=-noverify -Xmx1G -XX:+UseG1GC -XX:+UseStringDeduplication}}, errors={incompleteClasspath={severity=warning}}, configuration={checkProjectSettingsExclusions=true, updateBuildConfiguration=interactive}, trace={server=off}, import={gradle={enabled=true, wrapper={enabled=true}}, maven={enabled=true}, exclusions=[**/node_modules/**, **/.metadata/**, **/archetype-resources/**, **/META-INF/maven/**]}, referencesCodeLens={enabled=false}, signatureHelp={enabled=false}, implementationsCodeLens={enabled=false}, format={enabled=true, comments={enabled=true}, onType={enabled=true, fixComment={enabled=true}}}, autobuild={enabled=true}, maxConcurrentBuilds=1.0, completion={enabled=true, overwrite=true, guessMethodArguments=false, favoriteStaticMembers=[org.junit.Assert.*, org.junit.Assume.*, org.junit.jupiter.api.Assertions.*, org.junit.jupiter.api.Assumptions.*, org.junit.jupiter.api.DynamicContainer.*, org.junit.jupiter.api.DynamicTest.*, org.mockito.Mockito.*, org.mockito.ArgumentMatchers.*, org.mockito.Answers.*], importOrder=[java, javax, com, org]}, progressReports={enabled=true}, foldingRange={enabled=true}, maven={downloadSources=false}, codeGeneration={hashCodeEquals={useJava7Objects=false, useInstanceof=false}, useBlocks=false, generateComments=false, toString={template=${object.className} [${member.name()}=${member.value}, ${otherMembers}], codeStyle=STRING_CONCATENATION, skipNullValues=false, listArrayContents=true, limitElements=0.0}}}}
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-06-03 13:05:00.140
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-06-03 13:05:00.442
+!MESSAGE Classpath is incomplete. Only syntax errors will be reported for file:///Users/cryan/dev/code/p/java/frameworks/spring-boot/demo/src/main/java/com/example/demo/DemoApplication.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-06-03 13:05:01.069
+!MESSAGE Reconciled 0. Took 17 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-06-03 13:05:01.157
+!MESSAGE begin problem for /DemoApplication.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-06-03 13:05:01.157
+!MESSAGE 0 problems reported for /DemoApplication.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-06-03 13:05:01.160
+!MESSAGE Validated 1. Took 19 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-06-03 13:05:01.175
+!MESSAGE >> build jobs finished
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-06-03 13:05:01.177
+!MESSAGE >> registerFeature 'workspace/didChangeWatchedFiles'
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-06-03 13:05:01.178
+!MESSAGE >> registerFeature 'workspace/didChangeWatchedFiles'
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-06-03 13:05:01.179
+!MESSAGE >> watchers registered
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-06-03 13:05:09.164
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-06-03 13:05:09.169
+!MESSAGE Clearing problems for /DemoApplication.java
