@@ -1,0 +1,17 @@
+{
+  "__meta__": {
+      "about": "HTTPie configuration file",
+      "help": "https://github.com/jkbrzt/httpie#config",
+      "httpie": "0.9.9"
+  },
+  "default_options": [
+      "--verbose",
+      "--traceback",
+      "--auth-type=edgegrid",
+      "--print=Hhb",
+      "--timeout=300",
+      "--style=autumn",
+      "--session-read-only","~/.httpie-custom-headers.json",
+      "-adefault:"
+  ]
+}

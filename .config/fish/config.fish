@@ -1,5 +1,3 @@
-# ~/.config/fish/config.fish ~ ~/.bashrc
-#
 # `set` to list all variables
 # `set var "some value"`
 # `set -e var` to erase variable
@@ -7,90 +5,74 @@
 # Setting via the command line
 # Note using set in command line will only be available in the current terminal instance.
 #
-# Note: using `export VAR="some value"` rather than `set VAR "some value"` 
+# Note: using `export VAR="some value"` rather than `set VAR "some value"`
 # so that the var will be available in `bash` scripts
 
-# Aliases
-#-------------------------------------------------------------------------------
-alias graalvmjdk11 'set JAVA_HOME $GRAALVM_JAVA_11_HOME; and set PATH[1] $JAVA_HOME/bin'
-alias jdk8 'set JAVA_HOME $JAVA_8_HOME; and set PATH[1] $JAVA_HOME/bin'
-alias jdk11 'set JAVA_HOME $JAVA_11_HOME; and set PATH[1] $JAVA_HOME/bin'
-alias jdk13 'set JAVA_HOME $JAVA_13_HOME; and set PATH[1] $JAVA_HOME/bin'
+set fish_greeting ""
 
-alias l 'ls -1a'
-alias lh 'ls -1ahl'
+# theme
+set -gx TERM xterm-256color
+set -g theme_color_scheme terminal-dark
+set -g fish_prompt_pwd_dir_length 1
+set -g theme_display_user yes
+set -g theme_hide_hostname no
+set -g theme_hostname always
 
-# Env Vars
-# ------------------------------------------------------------------------------
+set -g theme_nerd_fonts yes
 
-# set P $HOME/dev/code/p
-export P="$HOME/dev/code/p"
-export T="$HOME/dev/code/t"
-export W="$HOME/dev/code/w"
+# aliases
+alias fzfp "fzf --height 40% --preview 'bat --style=numbers --color=always --line-range :500 {}'"
+alias g git
+alias l "ls -1a"
+alias la "ls -A"
+alias lh "ls -1ahl"
+alias ll "ls -l"
+alias ls "ls -p -G"
+alias p3 "python3"
 
-# Bazel deps
-export BAZEL_DEPS="/Users/cryan/dev/code/t/bazel-deps"
+set -gx EDITOR nvim
 
-# binaryen
-export BINARYEN="/Users/cryan/dev/code/t/binaryen"
+# env
+export P="$HOME/dev/p"
+export T="$HOME/dev/t"
+export W="$HOME/dev/w"
 
-# Go
-export GOPATH="/Users/cryan/go"
-# export compound go paths
-# export GOPATH=$GOPATH:/Users/cryan/dev/code/
+# path
+set -gx PATH bin $PATH
+set -gx PATH ~/bin $PATH
+set -gx PATH ~/.local/bin $PATH
+set -gx PATH /usr/local/bin $PATH
 
-# graalVM
-set GRAALVM_JAVA_11_HOME "/Library/Java/JavaVirtualMachines/graalvm-ce-java11-20.0.0/Contents/Home"
-# export PATH=/Library/Java/JavaVirtualMachines/graalvm-ce-java11-20.0.0/Contents/Home/bin:"$PATH"
-export GRAALVM_JAVA_11_HOME="$GRAALVM_JAVA_11_HOME"
+# Anaconda
+export ANACONDA_HOME=/usr/local/anaconda3
+set -gx PATH ANACONDA_HOME/bin $PATH
 
-# JAVA
-# Use set in order to execute (), fish does not allow $()
-set JAVA_8_HOME (/usr/libexec/java_home -v1.8)
-set JAVA_11_HOME (/usr/libexec/java_home -v11)
-set JAVA_13_HOME (/usr/libexec/java_home -v13)
-# Now expose to `bash` scripts
-export JAVA_8_HOME="$JAVA_8_HOME"
-export JAVA_11_HOME="$JAVA_11_HOME"
-export JAVA_13_HOME="$JAVA_13_HOME"
-# Default to jdk8
-export JAVA_HOME="$JAVA_8_HOME"
+# GO
+set -g GOPATH $HOME/go
+set -gx PATH $GOPATH/bin $PATH
 
-# JBOSS
-export JBOSS_HOME="/Users/cryan/dev/server/jboss-eap-7.2.2"
+# Java
+export JAVA_HOME=(/usr/libexec/java_home)
+set -gx PATH JAVA_HOME $PATH
 
 # Maven
-export M2_HOME="/Users/cryan/dev/software/apache-maven-3.6.2"
-
-# Node
-export NODE_HOME="/usr/local/bin/node"
-export NPM_HOME="/usr/local/bin/npm"
+export MAVEN_HOME=/usr/local/bin/mvn
+set -gx PATH $MAVEN_HOME/bin $PATH
 
 # NVM
-# @see .bashrc
-
-# Python
-export PYTHON_HOME="/usr/local/anaconda3/bin"
-export PYTHON_2_HOME="/usr/bin/python2.7"
+export NVM_DIR="$HOME/.nvm"
+set -gx PATH $NVM_DIR $PATH
 
 # Rust
-export RUST_HOME="/Users/cryan/.cargo"
+export RUST_HOME="$HOME/.cargo"
+set -gx PATH $RUST_HOME/bin $PATH
 
-# Wabt
-export WABT="/Users/cryan/dev/code/t/wabt"
+# Swap
+export SWAP="$HOME/.local/share/nvim/swap/"
 
-# Path
-#------------------------------------------------------------------------------ 
-export PATH="$GOPATH:$JAVA_HOME/bin:$M2_HOME/bin:$PYTHON_HOME:$PYTHON_2_HOME:$RUST_HOME/bin:$PATH"
+# Fuzzy
+# Setting rigpreg as the default source for fzf
+export FZF_DEFAULT_COMMAND='rg --files'
 
-# set -g theme_nerd_fonts yes
-# set -g theme_color_scheme solarized-dark
-# set -g theme_newline_cursor yes
-# set -g theme_title_display_user yes
-# set -g theme_title_display_process yes
-# set -g theme_display_cmd_duration yes
-
-# oceanic-next
-# Base16 Shell
-# Uncommenting line below causes error in nvim terminal. shows strange rgb escaped values
-# eval sh $HOME/.config/oceanic-next-shell/oceanic-next.dark.sh 
+# To apply the command to CTRL-T as well
+export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
