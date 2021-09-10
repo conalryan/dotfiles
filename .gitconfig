@@ -1,8 +1,8 @@
 # This is Git's per-user configuration file.
 [user]
 # Please adapt and uncomment the following lines:
-	name = cryan
-	email = conal.ryan@amadeus.com
+	name =
+	email =
 
 [alias]
   lg1 = log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
@@ -13,41 +13,44 @@
   # https://git-scm.com/docs/git-push#git-push---no-force-with-lease
   # only force push if the remote doesn't have any new content, not present locally
   please = push --force-with-lease
- 
+
   # Track any staged file to last commit
   commend = commit --amend --no-edit
- 
+
   # Terse git status
   shorty = status --short --branch
- 
+
   # find merge commit on a branch that contains the given commit
   # usage: git find-merge <commit hash> <branch-name>
   find-merge = "!sh -c 'commit=$0 && branch=${1:-HEAD} && (git rev-list $commit..$branch --ancestry-path | cat -n; git rev-list $commit..$branch --first-parent | cat -n) | sort -k2 -s | uniq -f1 -d | sort -n | tail -1 | cut -f2'"
- 
+
   # Show the merge commit that contains a given commit
   # usage: git show-merge <commit-hash>
   show-merge = !sh -c 'merge=$(git find-merge $0 $1) && [ -n \"$merge\" ] && git show $merge'
- 
+
   # Checkout a branch from a Pull Request created from a private fork
   # Alternative to:
   #   [Create a new branch]
   #   git fetch upstream refs/pull-requests/<pull-request-number>/from:<new-local-branch-name>
   #   [checkout the created branch]
-  #   git checkout new-local-branch-name 
+  #   git checkout new-local-branch-name
   stash-pr = "!f() { git fetch upstream refs/pull-requests/$1/from:$2; } ; f"
 
 [push]
   default = simple # git push will fail if the branch isn't tracking a remote branch
- 
+
 [status]
   showUntrackedFiles = all # Shows individual files in untracked directories
- 
+
 [rebase]
   autostash = true # automatically create a temporary stash before the operation begins, and apply it after the operation ends
+
 [filesystem "AdoptOpenJDK|1.8.0_232|/dev/disk1s1"]
 	timestampResolution = 1001 milliseconds
 	minRacyThreshold = 0 nanoseconds
+
 [credential]
 	helper = cache
+
 [color]
 	ui = true

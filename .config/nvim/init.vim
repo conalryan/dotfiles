@@ -1,304 +1,227 @@
-" ----------------------------------------------------------------------------- 
-" BASE Setup:
-" source $HOME/.config/nvim/cr_base.vim
-" No plugins found here, should all be basic vim/nvim capabilities
+" Auto install vimplug
+if empty(glob('~/.local/share/nvim/site/autoload/plug.vim'))
+    silent !curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs
+        \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+    autocmd VimEnter * PlugInstall --sync | source ~/.config/nvim/init.vim
+endif
 
-" enter the current millenium
-set nocompatible
-
-" enable syntax and plugins (for netrw)
-syntax enable
-filetype plugin on
-
-" Highlight max line length
-set colorcolumn=80
-
-" LINE WRAP
-set nowrap
-
-" LINE NUMBERS
-set number
-
-" MOUSE support
-set mouse=a
-
-" SPLITS
-" set splitbelow
-set splitright
-
-" TABS
-set expandtab 
-set shiftwidth=2
-set smarttab
-set softtabstop=0
-set tabstop=2
-
-" TABLINE
-" always show tab bar
-set showtabline=2
-
-" set nowrap           " do not automatically wrap on load
-" set formatoptions-=t " do not automatically wrap text when typing
-" set autoindent
-" set smartindent
-
-"------------------------------------------------------------------------------- 
-" FINDING FILES:
-
-set incsearch
-
-" Search down into subfolders
-" Provides tab-completion for all file-related tasks
-set path+=**
-
-" Display all matching files when we tab complete
-set wildmenu
-
-" NOW WE CAN:
-" - Hit tab to :find by partial match
-" - Use * to make it fuzzy
-" - Add fild path to search only in that dir e.g. :find ./some-dir/*.ts <tab>
-
-" THINGS TO CONSIDER:
-" - :b lets you autocomplete any open buffer
-" - You can type a substring of any file name after :b and it will find a
-"   match
-" - You can also use tab to open menu e.g. :b <tab> list all buffers and tab
-"   through them, or :b <sub-string> <tab> to autocomplete matches
-
-"------------------------------------------------------------------------------- 
-" TAG JUMPING:
-" Need to install ctags first
-
-" Create the `tags` file (may need to install ctags first)
-command! MakeTags !ctags -R .
-
-" NOW WE CAN:
-" - Use ^] to jump to tag under cursor
-" - Use g^] for ambiguous tags
-" - Use ^t to jump back up the tag stack
-
-" THINGS TO CONSIDER:
-" - This doesn't help if you want a visual list of tags
-"
-" CR:
-" - In an angular template if you try to jump tag under curse (^]) of that
-"   component it will jump you to angular.json
-
-"------------------------------------------------------------------------------- 
-" AUTOCOMPLETE:
-" The good stuff is documented in |ins-completion|
-
-" HIGHLIGHTS:
-" - ^x^n for JUST this file
-" - ^x^f for filenames (works with our path trick!)
-" - ^x^] for tags only
-" - ^n for anything specified by the 'complete' option
-" - ^p to go to previous 'complete' option
-
-" NOW WE CAN:
-" - Use ^n and ^p to go back and forth in the suggestion list
-"
-" CR:
-" - Yes it completes, but it gives you everything in JavaScript and in
-"   TypeScript. Does it require stricter languages?
-
-"------------------------------------------------------------------------------- 
-" FILE BROWSING:
-
-" Tweaks for browsing
-let g:netrw_banner=0        " disable annoying banner
-let g:netrw_browse_split=4  " open in prior window
-let g:netrw_altv=1          " open splits to the right
-let g:netrw_liststyle=3     " tree view
-let g:netrw_list_hide=netrw_gitignore#Hide()
-let g:netrw_list_hide.=',\(^\|\s\s\)\zs\.\S\+'
-
-" NOW WE CAN:
-" - :edit a folder to open a file browser
-"   :edit . to open a file browser. You can navigate open in split with 'v',
-"   open in tab with 't'
-" - <CR>/v/t to open in an h-split/v-split/tab
-" - check |netrw-browse-maps| for more mappings
-
-" CR:
-" - Pretty cool, seams like you could easily replace NERDTree but requires
-"   time and effort
-
-"------------------------------------------------------------------------------- 
-" SNIPPETS:
-
-" Read an empty HTML template and move cursor to title
-nnoremap ,html :-1read $HOME/.vim/.skeleton.html<CR>3jwf>a
-
-" NOW WE CAN:
-" - Take over the world!
-"   (with much fewer keystrokes)
-
-"------------------------------------------------------------------------------- 
-" BUILD INTEGRATION:
-" Steal Mr. Bradley's formatter & add it to our spec_helper
-" http://philipbradley.net/rspec-into-vim-with-quickfix
-" 
-" NOTE: Plugins are better, but you should be aware that this exists. Perhaps,
-" it will improve in the future
-"
-" Configure the `make` command to run RSpec
-set makeprg=bundle\ exec\ rspec\ -f\ QuickfixFormatter
-
-" NOW WE CAN:
-" - Run :make to run RSpec
-" - :cl to list errors
-" - :cc# to jump to error by number
-" - :cn and :cp to navigate forward and back
-
-"-------------------------------------------------------------------------------
-" Registers:
-" - Default register is what everything goes to when you use for example 'dd'
-" - Use '+' register
-" - Use double quote command \" to specify a specific register e.g. \"a
-"   Then use \"aP to paste from 'a' or \"bP to past from 'b' etc.
-" - Special clipboards are '+' and '*'
-" - Copy to system clipboard "+ then in other progam Command P to paste from
-"   VIM
-
-" ----------------------------------------------------------------------------- 
-" LIST ALL PLUGINS HERE:
-" source $HOME/.config/nvim/cr_plugins.vim
-" Workaround for https://github.com/junegunn/vim-plug/issues/454
-" Configuration will be corresponding file
-
+"Declare plugins
 call plug#begin('~/.config/nvim/plugged')
 
-" ------------------------------------------------------------------------------
-" cr_color_scheme.vim
-Plug 'cocopon/iceberg.vim'
-Plug 'morhetz/gruvbox'
-Plug 'rakr/vim-one'
-Plug 'challenger-deep-theme/vim'
-Plug 'tomasr/molokai'
-Plug 'altercation/vim-colors-solarized'
-Plug 'jdsimcoe/abstract.vim'
-Plug 'NLKNguyen/papercolor-theme'
-" Doesn't have great NERDTree support
-Plug 'danilo-augusto/vim-afterglow'
-Plug 'gregsexton/Atom'
-Plug 'dracula/vim', { 'as': 'dracula' }
-Plug 'mhartington/oceanic-next'
+" Sensible defaults
+Plug 'tpope/vim-sensible'
 
-" ------------------------------------------------------------------------------
-" cr_edit.vim
-" Code commenting/uncommenting
-Plug 'tpope/vim-commentary'
+" Themes
+Plug 'overcache/NeoSolarized'
 
-" Fuzzy Find
-Plug '/usr/local/opt/fzf'
-Plug 'junegunn/fzf.vim'
+" Status line
+" Plug 'hoob3rt/lualine.nvim'
+" Plug 'itchyny/lightline.vim'
 
-" Surround
-Plug 'tpope/vim-surround'
+" LSP
+Plug 'neovim/nvim-lspconfig'
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+Plug 'mfussenegger/nvim-jdtls'
 
-" ------------------------------------------------------------------------------
-" cr_git
-Plug 'tpope/vim-fugitive'
+" Auto-completion
+Plug 'nvim-lua/completion-nvim'
 
-" ------------------------------------------------------------------------------
-" cr_lang
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
+" Environment
+Plug 'editorconfig/editorconfig-vim'
 
-Plug 'neoclide/coc-angular', {'do': 'yarn install --frozen-lockfile'}
-Plug 'neoclide/coc-css', {'do': 'yarn install --frozen-lockfile'}
-Plug 'neoclide/coc-html', {'do': 'yarn install --frozen-lockfile'}
-Plug 'neoclide/coc-java', {'do': 'yarn install --frozen-lockfile'}
-Plug 'neoclide/coc-json', {'do': 'yarn install --frozen-lockfile'}
-Plug 'neoclide/coc-python', {'do': 'yarn install --frozen-lockfile'}
-Plug 'neoclide/coc-rls', {'do': 'yarn install --frozen-lockfile'}
-Plug 'neoclide/coc-tsserver', {'do': 'yarn install --frozen-lockfile'}
-Plug 'neoclide/coc-yaml', {'do': 'yarn install --frozen-lockfile'}
-Plug 'neoclide/coc-xml', {'do': 'yarn install --frozen-lockfile'}
+" Fuzzy search
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 
-" Plug 'Valloric/YouCompleteMe'
+" File search
+Plug 'nvim-lua/popup.nvim'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
+" Plug 'kyazdani42/nvim-web-devicons'
 
-" Bazel
-" Add maktaba, glaive and bazel to the runtimepath.
-" (maktaba and glaive must be installed before it can be used.)
-Plug 'google/vim-maktaba'
-Plug 'google/vim-glaive'
-Plug 'bazelbuild/vim-bazel'
-
-" Rust
-Plug 'rust-lang/rust.vim'
-
-" ------------------------------------------------------------------------------
-" cr_view
-Plug 'scrooloose/nerdtree'
-Plug 'Xuyuanp/nerdtree-git-plugin'
-
-Plug 'vim-airline/vim-airline'
-Plug 'airblade/vim-gitgutter'
-
-Plug 'majutsushi/tagbar'
+" File tree
+Plug 'preservim/nerdtree'
+Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+Plug 'ryanoasis/vim-devicons'
 
 call plug#end()
 
-" ----------------------------------------------------------------------------- 
-" Color Themes: https://github.com/rafi/awesome-vim-colorschemes
-" source $HOME/.config/nvim/cr_color_schemes.vim
 
-" OCEAN:
-" For Neovim 0.1.3 and 0.1.4
-" let $NVIM_TUI_ENABLE_TRUE_COLOR=1
-" Or if you have Neovim >= 0.1.5
-if (has("termguicolors"))
- set termguicolors
-endif
-" Theme
-syntax enable
-colorscheme OceanicNext
-let g:airline_theme='oceanicnext'
-syntax on
-let g:oceanic_next_terminal_bold = 1
-let g:oceanic_next_terminal_italic = 1
-" END OCEAN
+" Custom
+autocmd!
+" set autowrite
+set background=dark "or light
+" set cmdheight=3
+" set colorcolumn=80
+colorscheme NeoSolarized
+set conceallevel=0
+set encoding=UTF-8
+set expandtab
+set fileencoding=UTF-8
+set fileencodings=UTF-8
+set fileformats=unix,dos,mac
+set hidden
+set ignorecase
+" set mouse=a
+set nowrap
+set nowrapscan
+set number
+set path+=**
+set shell=zsh
+set shiftwidth=2
+set showcmd
+set showmatch
+set showmode
+set showtabline=2
+set smartcase
+set softtabstop=0
+set splitbelow
+set splitright
+:syntax on " must be :syntax on set syntax=on doesn't work
+set tabstop=2
+set termguicolors
+set t_Co=256
 
-" ----------------------------------------------------------------------------- 
-" EDIT MENU:
-" source $HOME/.config/nvim/cr_edit.vim
-" Copy, Paste, Delete, Find, Search & Replace etc
+" Auto-completion config
+" Use <Tab> and <S-Tab> to navigate through popup menu
+inoremap <expr> <Tab>   pumvisible() ? "\<C-n>" : "\<Tab>"
+inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 
-" Fuzzy Find
-" Default fzf layout
-" - down / up / left / right
-" let g:fzf_layout = { 'up': '~40%' }
+" Set completeopt to have a better completion experience
+set completeopt=menuone,noinsert,noselect
 
-" TODO open window top center (0, 50%)
-" You can set up fzf window using a Vim command (Neovim or latest Vim 8 required)
-" let g:fzf_layout = { 'window': 'enew' }
-" let g:fzf_layout = { 'window': '10new' }
-
-" ----------------------------------------------------------------------------- 
-" LANGUAGE INTEGRATION:
-" source $HOME/.config/nvim/cr_lang.vim
-" :CocInstall coc-tsserver coc-json coc-html coc-css coc-python
+" Avoid showing message extra message when using completion
+set shortmess+=c
 
 
-" ----------------------------------------------------------------------------- 
-" VIEW MENU:
-" source $HOME/.config/nvim/cr_view.vim
-" Sidebars, gutters, etc
+" Fuzzy finder config
+" Find files using Telescope command-line sugar.
+nnoremap <leader>ff <cmd>Telescope find_files<cr>
+nnoremap <leader>fg <cmd>Telescope live_grep<cr>
+nnoremap <leader>fb <cmd>Telescope buffers<cr>
+nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 
-" https://vimawesome.com/plugin/vim-gitgutter
-set updatetime=100
-" let g:gitgutter_highlight_lines = 1
-let g:gitgutter_highlight_line_number = 1
 
-" Auto open NERDTree on vim startup
-autocmd vimenter * NERDTree
+" Status lines
+" let g:lightline = { 'colorscheme': 'solarized' }
+" lua << EOF
+" require('lualine').setup()
+" options = {theme = 'nord'}
+" EOF
 
-" NERDTree Key mappings
-nnoremap <Leader>t :NERDTreeToggle<CR>
-nnoremap <silent> <Leader>f :NERDTreeFind<CR>
 
-" Auto close NERDTree if it's the last open window
-" FAILS
-" autocmd bufenter * if (winnr(“$”) == 1 && exists(“b:NERDTreeType”) && b:NERDTreeType == “primary”) | q | endif
+" Tree config
+" Start NERDTree when Vim is started without file arguments.
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists('s:std_in') | NERDTree | endif
+
+let g:NERDTreeNodeDelimiter = "\u00a0" " fix ^G in OSX
+let g:NERDTreeGitStatusUseNerdFonts = 1
+
+let g:webdevicons_enable = 1
+" adding the flags to NERDTree
+let g:webdevicons_enable_nerdtree = 1
+
+" set guifont=DroidSansMono\ Nerd\ Font:h11
+
+" LSP config
+lua << EOF
+local nvim_lsp = require('lspconfig')
+local protocol = require'vim.lsp.protocol'
+
+-- Use an on_attach function to only map the following keys
+-- after the language server attaches to the current buffer
+local on_attach = function(client, bufnr)
+  local function buf_set_keymap(...) vim.api.nvim_buf_set_keymap(bufnr, ...) end
+  local function buf_set_option(...) vim.api.nvim_buf_set_option(bufnr, ...) end
+
+  -- Enable completion triggered by <c-x><c-o>
+  buf_set_option('omnifunc', 'v:lua.vim.lsp.omnifunc')
+
+  -- Mappings.
+  local opts = { noremap=true, silent=true }
+
+  -- See `:help vim.lsp.*` for documentation on any of the below functions
+  buf_set_keymap('n', 'gD', '<cmd>lua vim.lsp.buf.declaration()<CR>', opts)
+  buf_set_keymap('n', 'gd', '<cmd>lua vim.lsp.buf.definition()<CR>', opts)
+  buf_set_keymap('n', 'K', '<cmd>lua vim.lsp.buf.hover()<CR>', opts)
+  buf_set_keymap('n', 'gi', '<cmd>lua vim.lsp.buf.implementation()<CR>', opts)
+  buf_set_keymap('n', '<C-k>', '<cmd>lua vim.lsp.buf.signature_help()<CR>', opts)
+  buf_set_keymap('n', '<space>wa', '<cmd>lua vim.lsp.buf.add_workspace_folder()<CR>', opts)
+  buf_set_keymap('n', '<space>wr', '<cmd>lua vim.lsp.buf.remove_workspace_folder()<CR>', opts)
+  buf_set_keymap('n', '<space>wl', '<cmd>lua print(vim.inspect(vim.lsp.buf.list_workspace_folders()))<CR>', opts)
+  buf_set_keymap('n', '<space>D', '<cmd>lua vim.lsp.buf.type_definition()<CR>', opts)
+  buf_set_keymap('n', '<space>rn', '<cmd>lua vim.lsp.buf.rename()<CR>', opts)
+  buf_set_keymap('n', '<space>ca', '<cmd>lua vim.lsp.buf.code_action()<CR>', opts)
+  buf_set_keymap('n', 'gr', '<cmd>lua vim.lsp.buf.references()<CR>', opts)
+  buf_set_keymap('n', '<space>e', '<cmd>lua vim.lsp.diagnostic.show_line_diagnostics()<CR>', opts)
+  buf_set_keymap('n', '[d', '<cmd>lua vim.lsp.diagnostic.goto_prev()<CR>', opts)
+  buf_set_keymap('n', ']d', '<cmd>lua vim.lsp.diagnostic.goto_next()<CR>', opts)
+  buf_set_keymap('n', '<space>q', '<cmd>lua vim.lsp.diagnostic.set_loclist()<CR>', opts)
+  buf_set_keymap('n', '<space>f', '<cmd>lua vim.lsp.buf.formatting()<CR>', opts)
+
+  -- for auto-complete
+  require'completion'.on_attach(client, bufnr)
+  protocol.CompletionItemKind = {
+    '', -- Text
+    '', -- Method
+    '', -- Function
+    '', -- Constructor
+    '', -- Field
+    '', -- Variable
+    '', -- Class
+    'ﰮ', -- Interface
+    '', -- Module
+    '', -- Property
+    '', -- Unit
+    '', -- Value
+    '', -- Enum
+    '', -- Keyword
+    '﬌', -- Snippet
+    '', -- Color
+    '', -- File
+    '', -- Reference
+    '', -- Folder
+    '', -- EnumMember
+    '', -- Constant
+    '', -- Struct
+    '', -- Event
+    'ﬦ', -- Operator
+    '', -- TypeParameter
+  }
+end
+
+-- Use a loop to conveniently call 'setup' on multiple servers and
+-- map buffer local keybindings when the language server attaches
+local servers = { 'tsserver', 'bashls', 'cssls', 'gopls', 'graphql', 'html', 'jdtls', 'jsonls', 'pyright', 'rust_analyzer', 'sqlls', 'vimls', 'yamlls' }
+for _, lsp in ipairs(servers) do
+  nvim_lsp[lsp].setup {
+    on_attach = on_attach,
+    flags = {
+      debounce_text_changes = 150,
+    }
+  }
+end
+EOF
+
+
+" Sanity LSP checks
+" lua require'lspconfig'.angularls.setup{}
+" lua require'lspconfig'.gopls.setup{}
+
+
+" Treesitter config
+lua <<EOF
+require'nvim-treesitter.configs'.setup {
+  ensure_installed = "maintained", -- one of "all", "maintained" (parsers with maintainers), or a list of languages
+  ignore_install = {}, -- List of parsers to ignore installing e.g. { "javascript" },
+  highlight = {
+    enable = true,              -- false will disable the whole extension
+    disable = {},  -- list of language that will be disabled, e.g { "c", "rust" },
+    -- Setting this to true will run `:h syntax` and tree-sitter at the same time.
+    -- Set this to `true` if you depend on 'syntax' being enabled (like for indentation).
+    -- Using this option may slow down your editor, and you may see some duplicate highlights.
+    -- Instead of true it can also be a list of languages
+    additional_vim_regex_highlighting = false,
+  },
+}
+EOF
