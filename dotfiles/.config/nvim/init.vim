@@ -9,7 +9,7 @@ endif
 call plug#begin('~/.config/nvim/plugged')
 
 " Sensible defaults
-Plug 'tpope/vim-sensible'
+" Plug 'tpope/vim-sensible'
 
 " Themes
 Plug 'overcache/NeoSolarized'
@@ -49,12 +49,12 @@ call plug#end()
 " Custom
 autocmd!
 " set autowrite
-set background=dark "or light
+" set background=light dark is the default
 " set cmdheight=3
 " set colorcolumn=80
 colorscheme NeoSolarized
 set conceallevel=0
-set encoding=UTF-8
+" set encoding=UTF-8 default
 set expandtab
 set fileencoding=UTF-8
 set fileencodings=UTF-8
