@@ -33,6 +33,7 @@ brew install maven
 brew install node
 brew install opendJdk
 brew install rustup # then rustup-init
+brew install rust-analyzer
 
 ## Shell
 brew install --cask iterm2
