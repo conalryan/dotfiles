@@ -4,6 +4,9 @@
 	name =
 	email =
 
+[credential]
+	helper = cache # cache or osxkeychain
+
 [alias]
   lg1 = log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
   lg2 = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all
@@ -36,6 +39,14 @@
   #   git checkout new-local-branch-name
   stash-pr = "!f() { git fetch upstream refs/pull-requests/$1/from:$2; } ; f"
 
+  # Useful for fixes that don't need there own commit
+  rb2 = "!sh git add . && git commit -m "." && git rebase -i HEAD~2"
+
+  # TODO makes this an alias deletes all local "feature" branches
+  # git for-each-ref --format '%(refname:short)' refs/heads | grep 'feature' | xargs git branch -D
+
+  cleanup = "!git branch --merged | grep  -v 'master\\|develop\\|release' | xargs -n 1 -r git branch -d"
+
 [push]
   default = simple # git push will fail if the branch isn't tracking a remote branch
 
@@ -44,13 +55,6 @@
 
 [rebase]
   autostash = true # automatically create a temporary stash before the operation begins, and apply it after the operation ends
-
-[filesystem "AdoptOpenJDK|1.8.0_232|/dev/disk1s1"]
-	timestampResolution = 1001 milliseconds
-	minRacyThreshold = 0 nanoseconds
-
-[credential]
-	helper = cache
 
 [color]
 	ui = true

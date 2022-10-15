@@ -77,7 +77,11 @@ export ZSH="$HOME/.oh-my-zsh"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=()
+plugins=(
+  #zsh-autosuggestions,
+  #zsh-history-substring-search,
+  #zsh-syntax-highlighting
+)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -105,12 +109,18 @@ source $ZSH/oh-my-zsh.sh
 #
 # Example aliases
 alias fzfp="fzf --height 40% --preview 'bat --style=numbers --color=always --line-range :500 {}'"
-alias l="ls -1a"
-alias la="ls -A"
-alias lh="ls -1ahl"
-alias ll="ls -l"
+# alias g=git
 alias ls="ls -p -G"
 alias p3="python3"
+
+# exa replacement for ls
+# exa [OPTIONS] [FILES]
+alias l="exa -1ahl"
+alias la="exa -1a"
+alias lah="exa -1ah"
+alias lahl="exa -1ahl"
+alias lh="exa -1h"
+alias lh="exa -1hl"
 
 # Exports
 export PATH="~/bin:$PATH"
