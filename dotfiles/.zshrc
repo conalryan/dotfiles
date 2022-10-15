@@ -9,14 +9,13 @@ fi
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/corya/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 # ZSH_THEME="robbyrussell"
-# ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -78,11 +77,7 @@ export ZSH="/Users/corya/.oh-my-zsh"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(
-  #zsh-autosuggestions,
-  #zsh-history-substring-search,
-  #zsh-syntax-highlighting
-)
+plugins=()
 
 source $ZSH/oh-my-zsh.sh
 
@@ -109,10 +104,7 @@ source $ZSH/oh-my-zsh.sh
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
 alias fzfp="fzf --height 40% --preview 'bat --style=numbers --color=always --line-range :500 {}'"
-# alias g=git
 alias l="ls -1a"
 alias la="ls -A"
 alias lh="ls -1ahl"
@@ -125,21 +117,16 @@ export PATH="~/bin:$PATH"
 export PATH="~/.local/bin:$PATH"
 export PATH="/usr/local/bin:$PATH"
 
-export P="$HOME/dev//p"
-export T="$HOME/dev//t"
+export D="$HOME/dev"
 export W="$HOME/dev/w"
 
 # Anaconda
 export ANACONDA_HOME=/usr/local/anaconda3
 export PATH="$ANACONDA_HOME/bin:$PATH"
 
-# GO
-export GOPATH="$HOME/go"
-export PATH="$GOPATH/bin:$PATH"
-
 # Java
-# export JAVA_HOME="$(/usr/libexec/java_home)"
-# export PATh="$JAVA_HOME:$PATH"
+export JAVA_HOME=/usr/local/Cellar/openjdk/19
+export PATH="$JAVA_HOME:$PATH"
 
 # Maven
 export MAVEN_HOME=/usr/local/bin/mvn
@@ -165,15 +152,13 @@ export FZF_DEFAULT_COMMAND='rg --files'
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-# Theme via brew
-source /usr/local/opt/powerlevel10k/powerlevel10k.zsh-theme
+# Theme
+source $ZSH/custom/themes/powerlevel10k/powerlevel10k.zsh-theme
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-# Fish-like via brew
-source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-source /usr/local/share/zsh-history-substring-search/zsh-history-substring-search.zsh
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-export ZSH_HIGHLIGHT_HIGHLIGHTERS_DIR=/usr/local/share/zsh-syntax-highlighting/highlighters
-
-# export ZSH_HIGHLIGHT_HIGHLIGHTERS_DIR="$ZSH/custom/plugins/zsh-syntax-highlighting/highlighters"
+# Fish-like
+source $ZSH/custom/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+source $ZSH/custom/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
+source $ZSH/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+export ZSH_HIGHLIGHT_HIGHLIGHTERS_DIR=$ZSH/custom/plugins/zsh-syntax-highlighting/highlighters

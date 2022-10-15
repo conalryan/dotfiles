@@ -12,8 +12,10 @@ esac
 
 echo $MACHINE
 
+ZSH="$HOME/.oh-my-zsh"
+
 # Installs .oh-my-zsh
-if [ ! -d "$HOME/.oh-my-zsh" ]; then
+if [ ! -d ZSH ]; then
   # Installs Oh my ZSH with Mac
   if [[ $MACHINE == "Mac" ]]; then
     sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"

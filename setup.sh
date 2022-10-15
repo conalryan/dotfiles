@@ -14,15 +14,16 @@ if [[ "$MACHINE" == "Linux" ]]
     echo 'linux setup not yet configured'
 elif [[ "$MACHINE" == "Mac" ]]
   then
-    # source mac/setup.sh
-    echo 'mac'
-    # Install apps and binaries with Brew
+    echo 'Setting up mac...'
+   
     source brew_setup.sh
 
-    # Set npm permissions and install global binaries
-    # source shared/npm.sh
+    source shell_setup.sh
 
-    # Configure MacOS defaults.
-    # You only want to run this once during setup. Additional runs may reset changes you make manually.
-    # source ./macos
+    source config_setup.sh
+
+    source nvim_setup.sh
+
+    # As needed
+    # source ssh_setup.sh
 fi
