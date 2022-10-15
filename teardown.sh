@@ -11,21 +11,19 @@ esac
 
 if [[ "$MACHINE" == "Linux" ]]
   then
-    echo 'linux setup not yet configured'
+    echo 'linux teardown not yet configured'
 elif [[ "$MACHINE" == "Mac" ]]
   then
-    echo 'Setting up mac...'
+    echo 'Tearing down mac...'
 
-    source ./lib/brew_setup.sh
+    source ./lib/brew_teardown.sh
 
-    source ./lib/shell_setup.sh
+    source ./lib/shell_teardown.sh
 
-    source ./lib/dotfile_setup.sh
+    source ./lib/dotfile_teardown.sh
 
-    source ./lib/nvim_setup.sh
-
-    source ./lib/node_setup.sh
+    source ./lib/node_teardown.sh
 
     # As needed
-    # source ./lib/ssh_setup.sh
+    # source ./lib/ssh_teardown.sh
 fi
