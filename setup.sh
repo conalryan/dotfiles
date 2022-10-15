@@ -26,6 +26,5 @@ elif [[ "$MACHINE" == "Mac" ]]
 
     source ./lib/node_setup.sh
 
-    # As needed
-    # source ./lib/ssh_setup.sh
+    source ./lib/ssh_setup.sh
 fi

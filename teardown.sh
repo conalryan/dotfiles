@@ -24,6 +24,5 @@ elif [[ "$MACHINE" == "Mac" ]]
 
     source ./lib/node_teardown.sh
 
-    # As needed
-    # source ./lib/ssh_teardown.sh
+    source ./lib/ssh_teardown.sh
 fi
