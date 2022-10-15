@@ -1,5 +1,5 @@
 --[[
-  Scopes: 
+  Scopes:
 
   general (vim.o)
   Gets or sets general settings.
@@ -17,7 +17,7 @@
   Gets or sets global variables. This is usually the namespace where you'll find variables set by plugins. The only one I know isn't tied to a plugin is the leader key.
   use space as the leader key
   vim.g.mapleader = ' '
-  
+
   vim.opt
   With vim.opt we can set global, window and buffer settings.
   When we use it like this vim.opt acts like the :set command in vimscript, it give us a consistent way to modify neovim's options.
@@ -31,7 +31,7 @@
 vim.g.markdown_fenced_languages = {'bash=sh', 'javascript', 'js=javascript', 'json=javascript', 'typescript', 'ts=typescript', 'python', 'html', 'css', 'java', 'rust', 'go'}
 
 --[[
-  Explorer: NERDTree lik
+  Explorer: NERDTree like
   handy commands:
   :! ls -lF
   :find path/to/file.txt

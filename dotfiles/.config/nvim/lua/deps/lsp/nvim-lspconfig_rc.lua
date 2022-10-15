@@ -1,3 +1,42 @@
+--[[
+  # [LSP Language Server Protocol](https://github.com/neovim/nvim-lspconfig)
+
+  Access via lua api
+  `vim.lsp
+
+  Supports:
+  - go-to-definition
+  - find-references
+  - hover
+  - completion
+  - rename
+  - format
+  - refactor
+
+  Note: Manual, triggered completion can be provided by neovim's built-in omnifunc.
+
+  vim.lsp.buf
+  - add_workspace_folder()
+  - code_action()
+  - declaration()
+  - definition()
+  - formatting()
+  - hover()
+  - implementation
+  - list_workspace_folders()
+  - references()
+  - remove_workspace_folder()
+  - rename()
+  - signature_help()
+  - type_definitions
+
+  vim.lsp.diagnostic
+  - goto_next()
+  - goto_prev()
+  - set_loclist()
+  - show_line_diagnostics()
+--]]
+
 local nvim_lspconfig = require('lspconfig')
 
 -- Use an on_attach function to only map the following keys
@@ -13,7 +52,7 @@ local on_attach = function(client, bufnr)
   local opts = { noremap=true, silent=true }
 
   -- See `:help vim.lsp.*` for documentation on any of the below functions
-  -- vm.lsp.buf
+  -- vim.lsp.buf
   buf_set_keymap('n', '<space>wa', '<cmd>lua vim.lsp.buf.add_workspace_folder()<CR>', opts)
   buf_set_keymap('n', '<space>ca', '<cmd>lua vim.lsp.buf.code_action()<CR>', opts)
   buf_set_keymap('n', 'gD', '<cmd>lua vim.lsp.buf.declaration()<CR>', opts)
@@ -27,14 +66,14 @@ local on_attach = function(client, bufnr)
   buf_set_keymap('n', '<space>rn', '<cmd>lua vim.lsp.buf.rename()<CR>', opts)
   buf_set_keymap('n', '<C-k>', '<cmd>lua vim.lsp.buf.signature_help()<CR>', opts)
   buf_set_keymap('n', '<space>D', '<cmd>lua vim.lsp.buf.type_definition()<CR>', opts)
-  
-  -- vim.lsp.diagnostic
-  buf_set_keymap('n', '<space>e', '<cmd>lua vim.lsp.diagnostic.show_line_diagnostics()<CR>', opts)
-  buf_set_keymap('n', '[d', '<cmd>lua vim.lsp.diagnostic.goto_prev()<CR>', opts)
-  buf_set_keymap('n', ']d', '<cmd>lua vim.lsp.diagnostic.goto_next()<CR>', opts)
-  buf_set_keymap('n', '<space>q', '<cmd>lua vim.lsp.diagnostic.set_loclist()<CR>', opts)
 
-	require'completion'.on_attach(client)
+  -- vim.lsp.diagnostic
+  buf_set_keymap('n', ']d', '<cmd>lua vim.lsp.diagnostic.goto_next()<CR>', opts)
+  buf_set_keymap('n', '[d', '<cmd>lua vim.lsp.diagnostic.goto_prev()<CR>', opts)
+  buf_set_keymap('n', '<space>q', '<cmd>lua vim.lsp.diagnostic.set_loclist()<CR>', opts)
+  buf_set_keymap('n', '<space>e', '<cmd>lua vim.lsp.diagnostic.show_line_diagnostics()<CR>', opts)
+
+  require'completion'.on_attach(client)
   require'vim.lsp.protocol'.CompletionItemKind = {
     '', -- Text
     '', -- Method
@@ -75,3 +114,37 @@ for _, lsp in ipairs(servers) do
     }
   }
 end
+
+-- diagnostics
+vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
+  vim.lsp.diagnostic.on_publish_diagnostics, {
+    -- Disable underline, it's very annoying
+    underline = false,
+    -- Enable virtual text, else virtual_test = false,
+    virtual_text = {
+      spacing = 4
+    },
+    -- Use a function to dynamically turn signs off
+    -- and on, using buffer local variables
+    signs = true,
+    update_in_insert = false
+  }
+)
+
+--[[
+vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
+  vim.lsp.diagnostic.on_publish_diagnostics, {
+    virtual_text = {
+      prefix = "»",
+      spacing = 4,
+    },
+    signs = true,
+    update_in_insert = false,
+  }
+)
+
+vim.fn.sign_define('LspDiagnosticsSignError', { text = "", texthl = "LspDiagnosticsDefaultError" })
+vim.fn.sign_define('LspDiagnosticsSignWarning', { text = "", texthl = "LspDiagnosticsDefaultWarning" })
+vim.fn.sign_define('LspDiagnosticsSignInformation', { text = "", texthl = "LspDiagnosticsDefaultInformation" })
+vim.fn.sign_define('LspDiagnosticsSignHint', { text = "", texthl = "LspDiagnosticsDefaultHint" })
+--]]

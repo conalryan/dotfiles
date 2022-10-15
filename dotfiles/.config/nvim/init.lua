@@ -1,3 +1,5 @@
+require('cmds')
+
 require('maps')
 
 require('opts')
