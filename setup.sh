@@ -16,6 +16,8 @@ elif [[ "$MACHINE" == "Mac" ]]
   then
     echo 'Setting up mac...'
 
+    source ./lib/mac_setup.sh
+
     source ./lib/brew_setup.sh
 
     source ./lib/shell_setup.sh

@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # Install Homebrew (if not installed)
 if [ ! -d  /usr/local/bin/brew ]; then
   echo "Homebrew already removed"
