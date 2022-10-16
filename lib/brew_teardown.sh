@@ -6,37 +6,53 @@ if [ ! -d  /usr/local/bin/brew ]; then
   exit
 fi
 
-# Uninstall
+echo "--- Uninstall ---"
 
-## Apps
-brew uninstall --cask firefox
-brew uninstall google-chrome
+# Apps
 brew uninstall spotify
 brew uninstall --cask camtasia
+brew uninstall --cask gimp
+brew uninstall --cask inkscape
+brew uninstall --cask obsidian
 
-## IDE ~like
+# Browsers
+brew uninstall --cask firefox
+brew uninstall google-chrome
+
+# DB
+brew uninstall mongodb-community
+brew uninstall mysql
+brew uninstall postgresql
+brew uninstall --cask redis-stack
+
+# Env
+brew uninstall --cask docker
+brew uninstall --cask vagrant
+
+# IDE ~like
 brew uninstall neovim
 brew uninstall --cask postman
 brew uninstall --cask visual-studio-code
+brew uninstall --cask font-hack-nerd-font
 
-## Lang
+# Lang
 brew uninstall --cask anaconda # uninstall python + pacakges
-brew uninstall --cask docker
 brew uninstall maven
-brew uninstall node
+# brew uninstall node let nvm manage node
 brew uninstall opendjdk
 brew uninstall rustup # then rustup-init
 brew uninstall rust-analyzer
+brew uninstall wasm-pack
 
-## Shell
+# Shell
 brew uninstall --cask iterm2
 brew uninstall zsh
 
-## Storage
+# Storage
 brew uninstall google-drive
 brew uninstall --cask sync
 
-## Commandline ~Tools
+# Commandline ~Tools
 brew uninstall ack
 brew uninstall bat
 brew uninstall ctags
@@ -44,9 +60,11 @@ brew uninstall exa
 brew uninstall fzf
 brew uninstall git
 brew uninstall httpie
+brew uninstall http-server
 brew uninstall ripgrep
 brew uninstall rsync
 brew uninstall tree
+brew uninstall yarn
 
 # Remove all unused deps
 brew autoremove

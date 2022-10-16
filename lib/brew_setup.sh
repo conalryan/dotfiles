@@ -25,9 +25,6 @@ BREW_PREFIX=$(brew --prefix)
 brew tap homebrew/cask
 
 echo "--- Install ---"
-# Browsers
-brew install --cask firefox
-brew install google-chrome
 
 # Apps
 brew install spotify
@@ -35,6 +32,10 @@ brew install --cask camtasia
 brew install --cask gimp
 brew install --cask inkscape
 brew install --cask obsidian
+
+# Browsers
+brew install --cask firefox
+brew install google-chrome
 
 # DB
 
@@ -81,17 +82,17 @@ brew install postgresql # or postgresql@14
 brew tap redis-stack/redis-stack
 brew install --cask redis-stack
 
-## Env
+# Env
 brew install --cask docker
 brew install --cask vagrant
 
-## IDE ~like
+# IDE ~like
 brew install neovim
 brew install --cask postman
 brew install --cask visual-studio-code
 brew install --cask font-hack-nerd-font
 
-## Lang
+# Lang
 brew install --cask anaconda # install python + pacakges
 brew install maven
 # brew install node let nvm manage node
@@ -100,15 +101,15 @@ brew install rustup # then rustup-init
 brew install rust-analyzer
 brew install wasm-pack
 
-## Shell
+# Shell
 brew install --cask iterm2
 brew install zsh
 
-## Storage
+# Storage
 brew install google-drive
 brew install --cask sync
 
-## Commandline ~Tools
+# Commandline ~Tools
 brew install ack
 brew install bat
 brew install ctags
