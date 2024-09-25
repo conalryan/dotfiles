@@ -90,7 +90,17 @@ brew install --cask vagrant
 brew install neovim
 brew install --cask postman
 brew install --cask visual-studio-code
+
+brew tap homebrew/cask-fonts
+brew install --cask font-fira-code-nerd-font
 brew install --cask font-hack-nerd-font
+brew install --cask font-iosevka-nerd-font
+brew install --cask font-iosevka-term-nerd-font
+brew install --cask font-meslo-lg-nerd-font
+brew install --cask font-monoid-nerd-font
+brew install --cask font-noto-nerd-font
+brew install --cask font-terminess-ttf-nerd-font
+brew install --cask font-ubuntu-nerd-font
 
 # Lang
 brew install --cask anaconda # install python + pacakges
