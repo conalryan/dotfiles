@@ -26,7 +26,5 @@ elif [[ "$MACHINE" == "Mac" ]]
 
     source ./lib/nvim_setup.sh
 
-    source ./lib/node_setup.sh
-
     source ./lib/ssh_setup.sh
 fi

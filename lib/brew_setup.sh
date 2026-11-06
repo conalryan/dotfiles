@@ -28,7 +28,9 @@ echo "--- Install ---"
 
 # Apps
 brew install spotify
+brew install --cask figma
 brew install --cask obsidian
+brew install --cask slack
 
 # Browsers
 brew install --cask firefox
@@ -36,6 +38,13 @@ brew install google-chrome
 
 # Env
 brew install --cask docker
+
+# Terminal
+brew install --cask warp
+brew install --cask ghostty
+
+# Shell
+brew install zsh
 
 # IDE ~like
 brew install neovim
@@ -49,8 +58,8 @@ brew install --cask font-meslo-lg-nerd-font
 brew install --cask font-noto-nerd-font
 brew install --cask font-ubuntu-nerd-font
 
-# Shell
-brew install zsh
+# Node
+brew install fnm
 
 # Storage
 brew install google-drive

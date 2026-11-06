@@ -10,9 +10,6 @@ echo "--- Uninstall ---"
 
 # Apps
 brew uninstall spotify
-brew uninstall --cask camtasia
-brew uninstall --cask gimp
-brew uninstall --cask inkscape
 brew uninstall --cask obsidian
 
 # Browsers
@@ -22,14 +19,26 @@ brew uninstall google-chrome
 # Env
 brew uninstall --cask docker
 
+# Terminal
+brew uninstall --cask warp
+brew uninstall --cask ghostty
+
+# Shell
+brew uninstall zsh
+
 # IDE ~like
 brew uninstall neovim
 brew uninstall --cask postman
 brew uninstall --cask visual-studio-code
-brew uninstall --cask font-hack-nerd-font
 
-# Shell
-brew uninstall zsh
+brew uninstall --cask font-fira-code-nerd-font
+brew uninstall --cask font-hack-nerd-font
+brew uninstall --cask font-meslo-lg-nerd-font
+brew uninstall --cask font-noto-nerd-font
+brew uninstall --cask font-ubuntu-nerd-font
+
+# Node
+brew uninstall fnm
 
 # Storage
 brew uninstall google-drive

@@ -22,7 +22,5 @@ elif [[ "$MACHINE" == "Mac" ]]
 
     source ./lib/dotfile_teardown.sh
 
-    source ./lib/node_teardown.sh
-
     source ./lib/ssh_teardown.sh
 fi

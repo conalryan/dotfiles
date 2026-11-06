@@ -8,20 +8,24 @@
 	helper = cache # cache or osxkeychain
 
 [alias]
+  # Quick fixes
+  ah = !git add . && git commit --amend --no-edit && git push --force-with-lease
+  co = !git commit --amend --no-edit
+  copl = !git commit --amend --no-edit && git push --force-with-lease
+  comend = commit --amend --no-edit
+
+  # Status
+  shorty = status --short --branch
+
+  # Cleanup
+  # TODO makes this an alias deletes all local "feature" branches
+  # git for-each-ref --format '%(refname:short)' refs/heads | grep 'feature' | xargs git branch -D
+  cleanup = "!git branch --merged | grep  -v 'master\\|develop\\|release' | xargs -n 1 -r git branch -d"
+
+  # History
   lg1 = log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
   lg2 = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all
   lg = !git lg1
-
-  # https://developer.atlassian.com/blog/2015/04/force-with-lease/
-  # https://git-scm.com/docs/git-push#git-push---no-force-with-lease
-  # only force push if the remote doesn't have any new content, not present locally
-  please = push --force-with-lease
-
-  # Track any staged file to last commit
-  commend = commit --amend --no-edit
-
-  # Terse git status
-  shorty = status --short --branch
 
   # find merge commit on a branch that contains the given commit
   # usage: git find-merge <commit hash> <branch-name>
@@ -39,22 +43,17 @@
   #   git checkout new-local-branch-name
   stash-pr = "!f() { git fetch upstream refs/pull-requests/$1/from:$2; } ; f"
 
-  # Useful for fixes that don't need there own commit
-  rb2 = "!sh git add . && git commit -m "." && git rebase -i HEAD~2"
+[color]
+	ui = true
 
-  # TODO makes this an alias deletes all local "feature" branches
-  # git for-each-ref --format '%(refname:short)' refs/heads | grep 'feature' | xargs git branch -D
-
-  cleanup = "!git branch --merged | grep  -v 'master\\|develop\\|release' | xargs -n 1 -r git branch -d"
+[init]
+	defaultBranch = develop
 
 [push]
   default = simple # git push will fail if the branch isn't tracking a remote branch
 
-[status]
-  showUntrackedFiles = all # Shows individual files in untracked directories
-
 [rebase]
   autostash = true # automatically create a temporary stash before the operation begins, and apply it after the operation ends
 
-[color]
-	ui = true
+[status]
+  showUntrackedFiles = all # Shows individual files in untracked directories
