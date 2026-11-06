@@ -19,15 +19,8 @@ brew uninstall --cask obsidian
 brew uninstall --cask firefox
 brew uninstall google-chrome
 
-# DB
-brew uninstall mongodb-community
-brew uninstall mysql
-brew uninstall postgresql
-brew uninstall --cask redis-stack
-
 # Env
 brew uninstall --cask docker
-brew uninstall --cask vagrant
 
 # IDE ~like
 brew uninstall neovim
@@ -35,17 +28,7 @@ brew uninstall --cask postman
 brew uninstall --cask visual-studio-code
 brew uninstall --cask font-hack-nerd-font
 
-# Lang
-brew uninstall --cask anaconda # uninstall python + pacakges
-brew uninstall maven
-# brew uninstall node let nvm manage node
-brew uninstall opendjdk
-brew uninstall rustup # then rustup-init
-brew uninstall rust-analyzer
-brew uninstall wasm-pack
-
 # Shell
-brew uninstall --cask iterm2
 brew uninstall zsh
 
 # Storage

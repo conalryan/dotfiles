@@ -6,4 +6,3 @@ git clone --depth=1 https://github.com/savq/paq-nvim.git \
 
 # lsp
 npm install -g typescript-language-server typescript
-pip install pyright
