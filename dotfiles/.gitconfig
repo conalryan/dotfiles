@@ -1,18 +1,19 @@
 # This is Git's per-user configuration file.
 [user]
 # Please adapt and uncomment the following lines:
-	name =
-	email =
+	name = Conal Ryan
+	email = 
 
 [credential]
-	helper = cache # cache or osxkeychain
+  helper = cache # cache or osxkeychain
 
 [alias]
   # Quick fixes
   ah = !git add . && git commit --amend --no-edit && git push --force-with-lease
   co = !git commit --amend --no-edit
   copl = !git commit --amend --no-edit && git push --force-with-lease
-  comend = commit --amend --no-edit
+  pl = !git push --force-with-lease
+  redev = !git checkout -- . && git checkout develop
 
   # Status
   shorty = status --short --branch
@@ -55,5 +56,9 @@
 [rebase]
   autostash = true # automatically create a temporary stash before the operation begins, and apply it after the operation ends
 
+[rerere]
+	enabled = true
+
 [status]
   showUntrackedFiles = all # Shows individual files in untracked directories
+

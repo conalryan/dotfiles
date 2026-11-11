@@ -40,7 +40,6 @@ brew install google-chrome
 brew install --cask docker
 
 # Terminal
-brew install --cask warp
 brew install --cask ghostty
 
 # Shell

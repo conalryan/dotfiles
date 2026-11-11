@@ -20,7 +20,6 @@ brew uninstall google-chrome
 brew uninstall --cask docker
 
 # Terminal
-brew uninstall --cask warp
 brew uninstall --cask ghostty
 
 # Shell

@@ -1,0 +1,22 @@
+theme = vscode-dark
+
+# --- TMUX -----------------------------------------------------------------
+
+command = /opt/homebrew/bin/tmux attach-session -t default || /opt/homebrew/bin/tmux new-session -s default
+
+# Map Cmd + t to create a new Tmux window (tab)
+keybind = super+t=text:\x02c
+
+# Map Cmd + w to close the current Tmux pane/window
+keybind = super+w=text:\x04
+
+# Map Cmd + Shift + ] and [ to navigate Tmux tabs
+keybind = super+shift+]=text:\x02n
+keybind = super+shift+[=text:\x02p
+
+# Map Cmd + d to split pane vertically
+keybind = super+d=text:\x02%
+
+# Map Cmd + Shift + d to split pane horizontally
+keybind = super+shift+d=text:\x02"
+
